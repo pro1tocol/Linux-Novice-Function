@@ -16,7 +16,7 @@ Recommended vi/vim tool
 
 ## Integrate update sources for various OS
 
-## 1) Manjaro_based on Archlinux
+## 1) 'Manjaro'_based on Archlinux
     pacman-mirrors -i -c China -m rank               //replace the update source in China
 
 add and update China Tsinghua sources in the file
