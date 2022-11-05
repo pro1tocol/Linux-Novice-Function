@@ -50,7 +50,7 @@ add and update China Aliyun sources in the file
     deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
     deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
 
-## 4) `Kalilinux`--based on Debian
+## 4) `Kali`--based on Debian
     /etc/apt/sources.list                            //source storage directory file
 add and update China Aliyun sources in the file
 
