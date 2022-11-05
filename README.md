@@ -15,7 +15,7 @@ This repository is used to store descriptions of commands and tools commonly use
 
 </div>
 
-## compiler tools
+## Compiler tools
 Recommended vi/vim tool
 
     vim [file name] = open a file
