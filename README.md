@@ -13,7 +13,7 @@ This repository is used to store descriptions of commands and tools commonly use
 | Blackarch   | [Page](#blackarch)   | Archlinux   | [Go](https://github.com/pro1tocol/Linux-Novice-Function-1.0.2/tree/main/Blackarch)   |
 | Ubuntu   | [Page](#ubuntu)   | Debian   | [Go](https://github.com/pro1tocol/Linux-Novice-Function-1.0.2/tree/main/Ubuntu)   |
 | Kali   | [Page](#kali)   | Debian   | [Go](https://github.com/pro1tocol/Linux-Novice-Function-1.0.1/tree/main/Kali)   |
-| Debian   | [finishing]()   | FreeBSD   | [finishing]()   |
+| Debian 10   | [finishing]()   | FreeBSD   | [finishing]()   |
 
 </div>
 
