@@ -6,19 +6,20 @@ This repository is used to store descriptions of commands and tools commonly use
 
 ## Integrate update sources for various OS
 
-#### Manjaro_based on Archlinux
+### Manjaro_based on Archlinux
     pacman-mirrors -i -c China -m rank               //replace the update source in China
 
 add and update China Tsinghua sources in the file
 
-    /etc/pacman.conf                                 //Meaning: source storage directory file
+    /etc/pacman.conf                                 //source storage directory file
     [archlinux]
     Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
 
 
-#### Blackarch_based on Archlinux
-    /etc/pacman.conf                                 //Meaning: source storage directory file
-    SigLevel = Never                                 //Meaning: modifying siglevel can exempt key verification
+
+### Blackarch_based on Archlinux
+    /etc/pacman.conf
+    SigLevel = Never                                 //modifying siglevel can exempt key verification
     [archlinux]
     Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
 changing the mainland China update source also requires changes:
