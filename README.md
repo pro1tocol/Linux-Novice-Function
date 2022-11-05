@@ -1,4 +1,4 @@
-# Linux-Novice-Function-1.0.1
+# Linux-Novice-Function-1.0.2
 -----------------------------
 This repository is used to store descriptions of commands and tools commonly used in the Linux/Save for beginners
 
@@ -6,12 +6,12 @@ This repository is used to store descriptions of commands and tools commonly use
 
 <div align="center">
 
-| OS  | Directory| Based| Difficulty| Content|
-| ---------- | -----------| -----------| -----------| -----------|
-| Manjaro   | [Page](#manjaro)   | Archlinux   | +   | planning   |
-| Blackarch   | [Page](#blackarch)   | Archlinux   | +++   | planning   |
-| Unbuntu   | [Page](#ubuntu)   | Debian   | +   | planning   |
-| Kali   | [Page](#kali)   | Debian   | ++   | [Go](https://github.com/pro1tocol/Linux-Novice-Function-1.0.1/tree/main/Kali)   |
+| OS  | Directory| Based| Content|
+| ---------- | -----------| -----------| -----------|
+| Manjaro   | [Page](#manjaro)   | Archlinux   | planning   |
+| Blackarch   | [Page](#blackarch)   | Archlinux   | planning   |
+| Unbuntu   | [Page](#ubuntu)   | Debian   | planning   |
+| Kali   | [Page](#kali)   | Debian   | [Go](https://github.com/pro1tocol/Linux-Novice-Function-1.0.1/tree/main/Kali)   |
 
 </div>
 
@@ -20,12 +20,12 @@ Recommended vi/vim tool
 
     vim [file name] = open a file
     :i  = edit file
-    :q! = force quit, the file will be lost if it is not saved
+    :q! = force quit, the file will be lost if not saved
     :w! = force save
     :wq = save and exit
     :q  = exit
 
-## Integrate update sources for various OS
+## Update sources for various OS
 
 ## `Manjaro`
 replace the update source in China
@@ -82,4 +82,4 @@ add and update China USTC sources in the file
     deb http://mirrors.ustc.edu.cn/debian/ buster-backports main contrib non-free
     deb http://mirrors.ustc.edu.cn/debian-security buster/updates main contrib non-free
 
-[back ↑ TOP](#linux-novice-function-101)
+[back ↑ TOP](#linux-novice-function-102)
