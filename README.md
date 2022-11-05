@@ -6,7 +6,7 @@ This repository is used to store descriptions of commands and tools commonly use
 
 ## Integrate update sources for various OS
 
-### 1) Manjaro_based on Archlinux
+## 1) Manjaro_based on Archlinux
     pacman-mirrors -i -c China -m rank               //replace the update source in China
 
 add and update China Tsinghua sources in the file
@@ -15,9 +15,7 @@ add and update China Tsinghua sources in the file
     [archlinux]
     Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
 
-
-
-### 2) Blackarch_based on Archlinux
+## 2) Blackarch_based on Archlinux
     /etc/pacman.conf
     SigLevel = Never                                 //modifying siglevel can exempt key verification
     [archlinux]
@@ -27,9 +25,7 @@ changing the mainland China update source also requires changes:
     /etc/pacman.d/mirrorlist
     /etc/pacman.d/blackarch-mirrorlist
 
-
-
-### 3) Ubuntu--based on Debian
+## 3) Ubuntu--based on Debian
     /etc/apt/sources.list                            //source storage directory file
 add and update China Aliyun sources in the file
 
@@ -44,7 +40,7 @@ add and update China Aliyun sources in the file
     deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
     deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
 
-### 4) Kalilinux--based on Debian
+## 4) Kalilinux--based on Debian
     /etc/apt/sources.list                            //source storage directory file
 add and update China Aliyun sources in the file
 
