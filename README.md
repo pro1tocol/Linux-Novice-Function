@@ -11,7 +11,7 @@ This repository is used to store descriptions of commands and tools commonly use
 | Manjaro   | [Page](#1-manjaro_based-on-archlinux)   | Archlinux   | +   | planning   |
 | Blackarch   | [Page](#2-blackarch_based-on-archlinux)   | Archlinux   | +++   | planning   |
 | Unbuntu   | [Page](#3-ubuntu_based-on-debian)   | Debian   | +   | planning   |
-| Kali   | [Page](#4-kali_based-on-debian)   | Debian   | ++   | planning   |
+| Kali   | [Page](#4-kali_based-on-debian)   | Debian   | ++   | [Go](https://github.com/pro1tocol/Linux-Novice-Function-1.0.1/tree/main/Kali)   |
 
 </div>
 
