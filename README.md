@@ -6,7 +6,7 @@ This repository is used to store descriptions of commands and tools commonly use
 
 ## Integrate update sources for various OS
 
-##### 1) Manjaro_based on Archlinux
+#### Manjaro_based on Archlinux
     pacman-mirrors -i -c China -m rank               //replace the update source in China
 
 add and update China Tsinghua sources in the file
@@ -15,14 +15,17 @@ add and update China Tsinghua sources in the file
     [archlinux]
     Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
 
-##### 2)Blackarch_based on Archlinux
--------------based on Archlinux
-/etc/pacman.conf                                                                                 //Meaning: source storage directory file
-SigLevel = Never                                                                                 //Meaning: modifying siglevel can exempt key verification
-[archlinux]
-Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch                           //Meaning: add and update China Tsinghua sources in the file
-/etc/pacman.d/mirrorlist                                                                         //Meaning: change the update source in mainland China
-/etc/pacman.d/blackarch-mirrorlist                                                               //Meaning: change the update source in mainland China
+
+#### Blackarch_based on Archlinux
+    /etc/pacman.conf                                 //Meaning: source storage directory file
+    SigLevel = Never                                 //Meaning: modifying siglevel can exempt key verification
+    [archlinux]
+    Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
+changing the mainland China update source also requires changes:
+
+    /etc/pacman.d/mirrorlist
+    /etc/pacman.d/blackarch-mirrorlist
+
 
 ##### 3)Ubuntu--based on Debian
 /etc/apt/sources.list                                                                            //Meaning: source storage directory file
