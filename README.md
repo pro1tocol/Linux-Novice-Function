@@ -8,11 +8,11 @@ This repository is used to store descriptions of commands and tools commonly use
 
 | OS  | Directory| Based| Content|
 | ---------- | -----------| -----------| -----------|
-| Archcraft   | [Page](#archcraft)   | Archlinux   | [Go](https://github.com/pro1tocol/Linux-Novice-Function-1.0.2/tree/main/Archcraft)   |
-| Manjaro   | [Page](#manjaro)   | Archlinux   | [Go](https://github.com/pro1tocol/Linux-Novice-Function-1.0.2/tree/main/Manjaro)   |
-| Blackarch   | [Page](#blackarch)   | Archlinux   | [Go](https://github.com/pro1tocol/Linux-Novice-Function-1.0.2/tree/main/Blackarch)   |
-| Ubuntu   | [Page](#ubuntu)   | Debian   | [Go](https://github.com/pro1tocol/Linux-Novice-Function-1.0.2/tree/main/Ubuntu)   |
-| Kalilinux   | [Page](#kali)   | Debian   | [Go](https://github.com/pro1tocol/Linux-Novice-Function-1.0.1/tree/main/Kali)   |
+| Archcraft   | [Page](#archcraft)   | Archlinux   | [Go](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Archcraft)   |
+| Manjaro   | [Page](#manjaro)   | Archlinux   | [Go](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Manjaro)   |
+| Blackarch   | [Page](#blackarch)   | Archlinux   | [Go](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Blackarch)   |
+| Ubuntu   | [Page](#ubuntu)   | Debian   | [Go](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Ubuntu)   |
+| Kalilinux   | [Page](#kali)   | Debian   | [Go](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Kali)   |
 | Debian10   | [Page](#debian-10)   | FreeBSD   | [finishing]()   |
 | CentOS 7   | [finishing]()   | RHEL   | [finishing]()   |
 
@@ -42,7 +42,7 @@ add and update China Tsinghua sources in the file
     [archlinux]
     Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
 
-[Archcraft-Details](https://github.com/pro1tocol/Linux-Novice-Function-1.0.2/tree/main/Archcraft)
+[Archcraft-Details](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Archcraft)
 
 ## `Manjaro`
 replace the update source in China
@@ -55,7 +55,7 @@ add and update China Tsinghua sources in the file
     [archlinux]
     Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
 
-[Manjaro-Details](https://github.com/pro1tocol/Linux-Novice-Function-1.0.2/tree/main/Manjaro)
+[Manjaro-Details](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Manjaro)
 
 [back ↑ TOP](#linux-novice-function-102)
 
@@ -71,7 +71,7 @@ changing the mainland China update source also requires changes:
     /etc/pacman.d/mirrorlist
     /etc/pacman.d/blackarch-mirrorlist
 
-[Blackarch-Details](https://github.com/pro1tocol/Linux-Novice-Function-1.0.2/tree/main/Blackarch)
+[Blackarch-Details](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Blackarch)
 
 ## `Ubuntu`
 source storage directory file
@@ -90,7 +90,7 @@ add and update China Aliyun sources in the file
     deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
     deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
 
-[Ubuntu-Details](https://github.com/pro1tocol/Linux-Novice-Function-1.0.2/tree/main/Ubuntu)
+[Ubuntu-Details](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Ubuntu)
 
 [back ↑ TOP](#linux-novice-function-102)
 
@@ -109,7 +109,7 @@ add and update China USTC sources in the file
     deb http://mirrors.ustc.edu.cn/debian/ buster-backports main contrib non-free
     deb http://mirrors.ustc.edu.cn/debian-security buster/updates main contrib non-free
 
-[Kali-Details](https://github.com/pro1tocol/Linux-Novice-Function-1.0.1/tree/main/Kali)
+[Kali-Details](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Kali)
 
 ## `Debian 10`
 source storage directory file
