@@ -10,7 +10,7 @@ This repository is used to store descriptions of commands and tools commonly use
 | ---------- | -----------| -----------| -----------|
 | Manjaro   | [Page](#manjaro)   | Archlinux   | planning   |
 | Blackarch   | [Page](#blackarch)   | Archlinux   | planning   |
-| Ubuntu   | [Page](#ubuntu)   | Debian   | planning   |
+| Ubuntu   | [Page](#ubuntu)   | Debian   | [Go](https://github.com/pro1tocol/Linux-Novice-Function-1.0.2/tree/main/Ubuntu)   |
 | Kali   | [Page](#kali)   | Debian   | [Go](https://github.com/pro1tocol/Linux-Novice-Function-1.0.1/tree/main/Kali)   |
 
 </div>
