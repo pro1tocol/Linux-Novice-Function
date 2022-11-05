@@ -42,7 +42,7 @@ add and update China Tsinghua sources in the file
     [archlinux]
     Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
 
-[Archcraft-Details](https://github.com/pro1tocol/Linux-Novice-Function-1.0.2/tree/main/Archcraft)
+`[Archcraft-Details](https://github.com/pro1tocol/Linux-Novice-Function-1.0.2/tree/main/Archcraft)`
 [back ↑ TOP](#linux-novice-function-102)
 
 ## `Manjaro`
