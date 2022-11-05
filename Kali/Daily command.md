@@ -33,10 +33,14 @@ means to view the contents of the file
     cp -r       \\copy folder
     cp -r       \\copy file
     
-5）top命令：进程管理
-      输入k：杀掉进程PID
-      ps -ef查看进程详细信息
-      ps aux另种方式显示进程信息
+## `top` command
+Generally used for process management
+
+      k：[number]            \\kill process PID
+      kill [number]          \\kill process PID
+      ps -ef                 \\View process details
+      ps aux                 \\Another way to display process information
+      
 6）grep [关键字] [地址]在指定路径查找文件
 7）ifconfig查看网卡信息
       ifconfig [网卡名称] down关闭网卡
@@ -67,11 +71,7 @@ netstat -pantu｜egrep -v’关键字|关键字’
         whereis -b [文件名]数据库查找bat文件
         updatedb更新数据库
 13）echo“你好！银翼杀手！”终端显示
-14）vim使用：
-：set nu添加行号                      o插入行
-：wq保存                                   w复制
-：q不保存退出                          p粘贴
-：wq！强制保存退出
+
 15）shell脚本编写：
 ️vi 文件名.sh（进入）
 ️#！/bin/bash（必须调用脚本包头）
