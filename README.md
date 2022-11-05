@@ -63,4 +63,4 @@ add and update China USTC sources in the file
     deb http://mirrors.ustc.edu.cn/debian/ buster-backports main contrib non-free
     deb http://mirrors.ustc.edu.cn/debian-security buster/updates main contrib non-free
 
-[![](#(https://github.com/pro1tocol/Linux-Novice-Function-1.0.1)[back ↑ TOP])]
+[![](#[back ↑ TOP](https://github.com/pro1tocol/Linux-Novice-Function-1.0.1))]
