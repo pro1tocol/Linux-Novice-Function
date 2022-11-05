@@ -30,6 +30,18 @@ Recommended vi/vim tool
 
 ## Update sources for various OS
 
+## `Archcraft`
+replace the update source in China
+
+    reflector --verbose -c China --latest 12 --sort rate --threads 100 --save /etc/pacman.d/mirrorlist
+
+add and update China Tsinghua sources in the file
+
+    /etc/pacman.conf
+    [archlinux]
+    Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
+
+
 ## `Manjaro`
 replace the update source in China
 
