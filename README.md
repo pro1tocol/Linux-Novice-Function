@@ -7,8 +7,7 @@ This repository is used to store descriptions of commands and tools commonly use
 # Integrate update sources for various OS
 
 # 1)Manjaro
--------------based on Archlinux
-  $ pacman-mirrors -i -c China -m rank
+-------------based on Archlinux   pacman-mirrors -i -c China -m rank
 replace the update source in China
   $ /etc/pacman.conf                                 //Meaning: source storage directory file
 [archlinux]
