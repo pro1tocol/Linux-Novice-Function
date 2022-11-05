@@ -4,26 +4,35 @@ which means to list the contents of the current directory
     ls -l       \\show file details
     ls -a       \\show hidden folders
     ls -lh      \\Human-readable display
-    —sort=size  \\Sort by size
-    —sort=time  \\Sort by time
-    pwd         \\View the current directory name
+    —sort=size  \\sort by size
+    —sort=time  \\sort by time
+    pwd         \\view the current directory name
 
 ## `cd` command
 Indicates entering the current directory
 
     cd.         \\enter the current directory
-    cd..        \\Return to the upper directory
+    cd..        \\return to the upper directory
 
-3）cat查看文件内容
-      cat /etc/resolv.conf查看DNS配置文件
-      more查看更多文件内容
-      less查看文件内容但不显示隐藏文件
-      tail -20查看文件最新20行内容
-      watch -n 2 tail -20每2秒查看文件最新内容
-4）rm删除文件
-      rm -r删除文件夹
-      cp拷贝文件
-      cp -r拷贝文件夹
+## `cat` command
+means to view the contents of the file
+
+    cat /etc/resolv.conf    \\view DNS configuration files
+    more                    \\view more file content
+    less                    \\view file contents without showing hidden files
+    tail -20                \\view the latest 20 lines of the file
+    watch -n 2 tail -20     \\view the latest content of the file every 2 seconds
+`watch`command is a real-time monitoring tool
+
+## `rm` command
+
+    rm -r       \\delete folder
+    rm          \\delete file
+    
+## `cp` command
+    cp -r       \\copy folder
+    cp -r       \\copy file
+    
 5）top命令：进程管理
       输入k：杀掉进程PID
       ps -ef查看进程详细信息
