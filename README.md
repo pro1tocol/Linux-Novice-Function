@@ -19,7 +19,8 @@ This repository is used to store descriptions of commands and tools commonly use
 Recommended vi/vim tool
 
     vim [file name] = open a file
-    :i  = edit file
+     i  = edit file
+    Esc = toggle
     :q! = force quit, the file will be lost if not saved
     :w! = force save
     :wq = save and exit
