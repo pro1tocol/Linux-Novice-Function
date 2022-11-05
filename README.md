@@ -9,9 +9,9 @@ This repository is used to store descriptions of commands and tools commonly use
 | OS  | Directory| Based| Difficulty| Content|
 | ---------- | -----------| -----------| -----------| -----------|
 | Manjaro   | [Go](#1-manjaro_based-on-archlinux)   | Archlinux   | +   | planning   |
-| Blackarch   | [Go](#linux-novice-function-101)   | Archlinux   | +++   | planning   |
-| Unbuntu   | 表格单元   | Debian   | +   | planning   |
-| Kali   | 表格单元   | Debian   | ++   | planning   |
+| Blackarch   | [Go](#2-blackarch_based-on-archlinux))   | Archlinux   | +++   | planning   |
+| Unbuntu   | [Go]()   | Debian   | +   | planning   |
+| Kali   | [GO]()   | Debian   | ++   | planning   |
 
 </div>
 
