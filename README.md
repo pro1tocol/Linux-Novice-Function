@@ -6,7 +6,7 @@ This repository is used to store descriptions of commands and tools commonly use
 
 ## Integrate update sources for various OS
 
-### Manjaro_based on Archlinux
+### 1) Manjaro_based on Archlinux
     pacman-mirrors -i -c China -m rank               //replace the update source in China
 
 add and update China Tsinghua sources in the file
@@ -17,7 +17,7 @@ add and update China Tsinghua sources in the file
 
 
 
-### Blackarch_based on Archlinux
+### 2) Blackarch_based on Archlinux
     /etc/pacman.conf
     SigLevel = Never                                 //modifying siglevel can exempt key verification
     [archlinux]
@@ -28,25 +28,31 @@ changing the mainland China update source also requires changes:
     /etc/pacman.d/blackarch-mirrorlist
 
 
-##### 3)Ubuntu--based on Debian
-/etc/apt/sources.list                                                                            //Meaning: source storage directory file
-deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse    //Meaning: add and update China Aliyun sources in the file
 
-##### 4)Kalilinux--based on Debian
-/etc/apt/sources.list                                                                            //Meaning: source storage directory file
-deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
-deb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib                        //Meaning: add and update China Aliyun sources in the file
+### 3) Ubuntu--based on Debian
+    /etc/apt/sources.list                            //source storage directory file
+add and update China Aliyun sources in the file
 
-deb http://mirrors.ustc.edu.cn/debian/ buster main contrib non-free
-deb http://mirrors.ustc.edu.cn/debian/ buster-updates main contrib non-free
-deb http://mirrors.ustc.edu.cn/debian/ buster-backports main contrib non-free
-deb http://mirrors.ustc.edu.cn/debian-security buster/updates main contrib non-free              //Meaning: add and update China USTC sources in the file
+    deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
+    deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
+    deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse
+    deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse
+    deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse
+    deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse
+    deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse
+    deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse
+    deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
+    deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
+
+### 4) Kalilinux--based on Debian
+    /etc/apt/sources.list                            //source storage directory file
+add and update China Aliyun sources in the file
+
+    deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
+    deb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
+add and update China USTC sources in the file
+
+    deb http://mirrors.ustc.edu.cn/debian/ buster main contrib non-free
+    deb http://mirrors.ustc.edu.cn/debian/ buster-updates main contrib non-free
+    deb http://mirrors.ustc.edu.cn/debian/ buster-backports main contrib non-free
+    deb http://mirrors.ustc.edu.cn/debian-security buster/updates main contrib non-free
