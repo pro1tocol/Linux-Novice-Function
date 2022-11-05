@@ -1,10 +1,13 @@
-1) `ls` command, which means to list the contents of the current directory
+## `ls` command
+which means to list the contents of the current directory
+
     ls -l显示文件详细内容
     ls -a显示隐藏文件夹
     ls -lh易于人类阅读的显示
     —sort=size按大小排序
     —sort=time按时间排序
     pwd查看当前目录名称
+
 2）cd进入当前目录
       cd.进入当前目录
       cd..返回上成目录
