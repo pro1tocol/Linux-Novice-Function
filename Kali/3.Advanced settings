@@ -1,0 +1,3 @@
+## Time and language settings
+    dpkg-reconfigure tzdata
+    dpkg-reconfigure locales
