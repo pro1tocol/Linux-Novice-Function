@@ -4,6 +4,16 @@ This repository is used to store descriptions of commands and tools commonly use
 
 -----------------------------
 
+## compiler tools
+Recommended vi/vim tool
+
+    vim [file name] = open a file
+    :i  = edit file
+    :q! = force quit, the file will be lost if it is not saved
+    :w! = force save
+    :wq = save and exit
+    :q  = exit
+
 ## Integrate update sources for various OS
 
 ## 1) Manjaro_based on Archlinux
