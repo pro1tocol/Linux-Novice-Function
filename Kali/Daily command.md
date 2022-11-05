@@ -36,47 +36,51 @@ means to view the contents of the file
 ## `top` command
 Generally used for process management
 
-      k：[number]            \\kill process PID
-      kill [number]          \\kill process PID
-      ps -ef                 \\View process details
-      ps aux                 \\Another way to display process information
+      k：[number]           \\kill process PID
+      kill [number]         \\kill process PID
+      ps -ef                \\View process details
+      ps aux                \\Another way to display process information
       
-6）grep [关键字] [地址]在指定路径查找文件
-7）ifconfig查看网卡信息
-      ifconfig [网卡名称] down关闭网卡
-      ifconfig [网卡名称] up打开网卡
-      macchanger -m [六位地址] [网卡名称]
-      临时修改网卡地址，关闭下进行
-      iwconfig查看网卡链接状态
-      ping [地址]查看链接状态
-8）netstat pantu查看tcp链接
-9）｜管道
-netstat -pantu｜egrep -v’关键字|关键字’
-查看链接不包含‘关键字’以及‘关键字’内容
-｜awk‘{print $5}’｜cut -d ‘:’ -f｜sort｜uniq
-或者只显示第5列以及分块面：前内容并排序查重>[文件名]输出文件为文件名
-—————————————————
-命令｜命令=》顺序执行命令
-命令&命令=》依次执行命令
-命令｜｜命令=》左命令不成功执行右命令,反之
-命令&&命令=》左命令成功执行右命令，反之
-—————————————————
-10）mount挂载
-        mount -o loop [iso镜像] [地址]
-11）dmesg 查看系统message文件
-12）find /-name [名称]查找文件
-        find. -name“关键字” —exec cp
-        查找当前目录关键字文件执行拷贝
-        whereis [文件名]数据库查找文件名文件
-        whereis -b [文件名]数据库查找bat文件
-        updatedb更新数据库
-13）echo“你好！银翼杀手！”终端显示
+## `grep [keywords]/[address]` command
+It means to specify the path to find the file
 
-15）shell脚本编写：
-️vi 文件名.sh（进入）
-️#！/bin/bash（必须调用脚本包头）
-️chmod +x 文件名.sh（赋予脚本权限）
-️ls -l 文件名.sh（查看脚本root权限）
-️./ 文件名.sh（执行脚本）
+## `Network` command
+    ifconfig                 \\View NIC information
+    ifconfig [NIC name] down \\Stop NIC
+    ifconfig [NIC name] up   \\Start NIC
+    macchanger -m [MAC address] [NIC]  \\Temporarily modify the NIC address when the NIC is turned off
+    iwconfig                 \\View NIC link status
+    ping [address]           \\ICMP commed
+    traceroute [address]     \\ICMP commed needs to be installed in advance
+    netstat -ano             \\To view the link status of the local port, you need to install net-tools
+    netstat -nltp            \\TO view local enabled ports
+    
+## `Pipeline` command
+    [command] | [command]    \\Sequential execution
+    [command] & [command]    \\Execute in sequence
+    [command] || [command]   \\Left command failed to execute right command
+    [command] && [command]   \\Left command successfully executes right command
+
+## `mount` command
+    mount [file address] [address]     \\Mount file
+    umount [address]                   \\Unmount the file
+
+## `demsg` command
+View system message files
+
+## `find` command
+    find                    \\Keyword lookup filename
+    whereis                 \\Database lookup filename
+    which                   \\Direct lookup filename
+    updatedb                \\Update database
+
+## `echo` command
+    echo "text"             \\Print text
+    echo "text" > [address] \\Type text
+
+## `shell script`
+    #！/bin/bash            \\Header function call
+    chmod +x [file]         \\Grant 777 permissions
+    chmod -x [file]         \\Deleting 777 permissions needs to be done under the root user
 
 [back to Kali](https://github.com/pro1tocol/Linux-Novice-Function-1.0.1/tree/main/Kali)
