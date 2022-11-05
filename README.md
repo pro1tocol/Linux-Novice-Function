@@ -6,11 +6,11 @@ This repository is used to store descriptions of commands and tools commonly use
 
 <div align="center">
 
-| OS directory|
-| ---------- | -----------|
-| 表头1  | 表头2|
-| 表格单元   | 表格单元   |
-| 表格单元   | 表格单元   |
+    | OS directory|
+    | ---------- | -----------|
+    | 表头1  | 表头2|
+    | 表格单元   | 表格单元   |
+    | 表格单元   | 表格单元   |
 
 </div>
 
