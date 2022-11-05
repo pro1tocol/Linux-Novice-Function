@@ -35,7 +35,7 @@ changing the mainland China update source also requires changes:
     /etc/pacman.d/mirrorlist
     /etc/pacman.d/blackarch-mirrorlist
 
-## 3) `Ubuntu`--based on Debian
+## 3) `Ubuntu`_based on Debian
     /etc/apt/sources.list                            //source storage directory file
 add and update China Aliyun sources in the file
 
@@ -50,7 +50,7 @@ add and update China Aliyun sources in the file
     deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
     deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
 
-## 4) `Kali`--based on Debian
+## 4) `Kali`_based on Debian
     /etc/apt/sources.list                            //source storage directory file
 add and update China Aliyun sources in the file
 
