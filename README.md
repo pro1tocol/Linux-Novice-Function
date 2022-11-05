@@ -42,6 +42,8 @@ add and update China Tsinghua sources in the file
     [archlinux]
     Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
 
+[Archcraft-Details](https://github.com/pro1tocol/Linux-Novice-Function-1.0.2/tree/main/Archcraft)
+[back ↑ TOP](#linux-novice-function-102)
 
 ## `Manjaro`
 replace the update source in China
@@ -54,6 +56,9 @@ add and update China Tsinghua sources in the file
     [archlinux]
     Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
 
+[Manjaro-Details](https://github.com/pro1tocol/Linux-Novice-Function-1.0.2/tree/main/Manjaro)
+[back ↑ TOP](#linux-novice-function-102)
+
 ## `Blackarch`
 modifying siglevel can exempt key verification
 
@@ -65,6 +70,9 @@ changing the mainland China update source also requires changes:
 
     /etc/pacman.d/mirrorlist
     /etc/pacman.d/blackarch-mirrorlist
+
+[Blackarch-Details](https://github.com/pro1tocol/Linux-Novice-Function-1.0.2/tree/main/Blackarch)
+[back ↑ TOP](#linux-novice-function-102)
 
 ## `Ubuntu`
 source storage directory file
@@ -83,6 +91,9 @@ add and update China Aliyun sources in the file
     deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
     deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
 
+[Ubuntu-Details](https://github.com/pro1tocol/Linux-Novice-Function-1.0.2/tree/main/Ubuntu)
+[back ↑ TOP](#linux-novice-function-102)
+
 ## `Kali`
 source storage directory file
 
@@ -97,6 +108,9 @@ add and update China USTC sources in the file
     deb http://mirrors.ustc.edu.cn/debian/ buster-updates main contrib non-free
     deb http://mirrors.ustc.edu.cn/debian/ buster-backports main contrib non-free
     deb http://mirrors.ustc.edu.cn/debian-security buster/updates main contrib non-free
+
+[Kali-Details](https://github.com/pro1tocol/Linux-Novice-Function-1.0.1/tree/main/Kali)
+[back ↑ TOP](#linux-novice-function-102)
 
 ## `Debian 10`
 source storage directory file
@@ -115,5 +129,5 @@ adding the following sources increases the update time
     deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-backports main contrib non-free
     deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security buster/updates main contrib non-free
 
-
+[Debian 10-finishing]()
 [back ↑ TOP](#linux-novice-function-102)
