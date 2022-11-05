@@ -69,3 +69,5 @@ netstat -pantu｜egrep -v’关键字|关键字’
 ️chmod +x 文件名.sh（赋予脚本权限）
 ️ls -l 文件名.sh（查看脚本root权限）
 ️./ 文件名.sh（执行脚本）
+
+[back to Kali](https://github.com/pro1tocol/Linux-Novice-Function-1.0.1/tree/main/Kali)
