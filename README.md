@@ -28,17 +28,21 @@ Recommended vi/vim tool
 ## Integrate update sources for various OS
 
 ## 1) `Manjaro`_based on Archlinux
-    pacman-mirrors -i -c China -m rank               //replace the update source in China
+replace the update source in China
+
+    pacman-mirrors -i -c China -m rank
 
 add and update China Tsinghua sources in the file
 
-    /etc/pacman.conf                                 //source storage directory file
+    /etc/pacman.conf
     [archlinux]
     Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
 
 ## 2) `Blackarch`_based on Archlinux
+modifying siglevel can exempt key verification
+
     /etc/pacman.conf
-    SigLevel = Never                                 //modifying siglevel can exempt key verification
+    SigLevel = Never
     [archlinux]
     Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
 changing the mainland China update source also requires changes:
@@ -47,7 +51,9 @@ changing the mainland China update source also requires changes:
     /etc/pacman.d/blackarch-mirrorlist
 
 ## 3) `Ubuntu`_based on Debian
-    /etc/apt/sources.list                            //source storage directory file
+source storage directory file
+
+    /etc/apt/sources.list
 add and update China Aliyun sources in the file
 
     deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
@@ -62,7 +68,9 @@ add and update China Aliyun sources in the file
     deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
 
 ## 4) `Kali`_based on Debian
-    /etc/apt/sources.list                            //source storage directory file
+source storage directory file
+
+    /etc/apt/sources.list
 add and update China Aliyun sources in the file
 
     deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
