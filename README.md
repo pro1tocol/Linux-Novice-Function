@@ -6,13 +6,13 @@ This repository is used to store descriptions of commands and tools commonly use
 
 <div align="center">
 
-| OS  | Directory| 表头3| 表头4|
+| OS  | Directory| based| difficulty|
 | ---------- | -----------| -----------| -----------|
-| 表格单元   | 表格单元   | 表格单元   | 表格单元   |
-| 表格单元   | 表格单元   | 表格单元   | 表格单元   |
-| 表格单元   | 表格单元   | 表格单元   | 表格单元   |
-| 表格单元   | 表格单元   | 表格单元   | 表格单元   |
-    
+| Manjaro   | 表格单元   | Archlinux   | +   |
+| Blackarch   | 表格单元   | Archlinux   | +++   |
+| Unbuntu   | 表格单元   | Debian   | +   |
+| Kali   | 表格单元   | Debian   | ++   |
+
 </div>
 
 ## compiler tools
