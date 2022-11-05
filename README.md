@@ -97,4 +97,22 @@ add and update China USTC sources in the file
     deb http://mirrors.ustc.edu.cn/debian/ buster-backports main contrib non-free
     deb http://mirrors.ustc.edu.cn/debian-security buster/updates main contrib non-free
 
+## `Debian 10`
+source storage directory file
+
+    /etc/apt/sources.list
+add and update China Tsinghua sources in the file
+
+    deb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster main contrib non-free
+    deb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-updates main contrib non-free
+    deb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-backports main contrib non-free
+    deb https://mirrors.tuna.tsinghua.edu.cn/debian-security buster/updates main contrib non-free
+adding the following sources increases the update time
+
+    deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ buster main contrib non-free
+    deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-updates main contrib non-free
+    deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-backports main contrib non-free
+    deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security buster/updates main contrib non-free
+
+
 [back ↑ TOP](#linux-novice-function-102)
