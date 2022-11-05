@@ -8,7 +8,7 @@ This repository is used to store descriptions of commands and tools commonly use
 
 | OS  | Directory| Based| Content|
 | ---------- | -----------| -----------| -----------|
-| Archcraft   | [Page](#archcraft)   | Archlinux   | [finishing]()   |
+| Archcraft   | [Page](#archcraft)   | Archlinux   | [Go](https://github.com/pro1tocol/Linux-Novice-Function-1.0.2/tree/main/Archcraft)   |
 | Manjaro   | [Page](#manjaro)   | Archlinux   | [Go](https://github.com/pro1tocol/Linux-Novice-Function-1.0.2/tree/main/Manjaro)   |
 | Blackarch   | [Page](#blackarch)   | Archlinux   | [Go](https://github.com/pro1tocol/Linux-Novice-Function-1.0.2/tree/main/Blackarch)   |
 | Ubuntu   | [Page](#ubuntu)   | Debian   | [Go](https://github.com/pro1tocol/Linux-Novice-Function-1.0.2/tree/main/Ubuntu)   |
