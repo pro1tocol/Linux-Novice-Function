@@ -1,16 +1,19 @@
 ## `ls` command
 which means to list the contents of the current directory
 
-    ls -l显示文件详细内容
-    ls -a显示隐藏文件夹
-    ls -lh易于人类阅读的显示
-    —sort=size按大小排序
-    —sort=time按时间排序
-    pwd查看当前目录名称
+    ls -l       \\show file details
+    ls -a       \\show hidden folders
+    ls -lh      \\Human-readable display
+    —sort=size  \\Sort by size
+    —sort=time  \\Sort by time
+    pwd         \\View the current directory name
 
-2）cd进入当前目录
-      cd.进入当前目录
-      cd..返回上成目录
+## `cd` command
+Indicates entering the current directory
+
+    cd.         \\enter the current directory
+    cd..        \\Return to the upper directory
+
 3）cat查看文件内容
       cat /etc/resolv.conf查看DNS配置文件
       more查看更多文件内容
