@@ -31,7 +31,7 @@ means to view the contents of the file
     
 ## `cp` command
     cp -r       \\copy folder
-    cp -r       \\copy file
+    cp          \\copy file
     
 ## `top` command
 Generally used for process management
