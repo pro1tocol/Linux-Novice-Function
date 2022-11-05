@@ -8,10 +8,11 @@ This repository is used to store descriptions of commands and tools commonly use
 
 ### 1)Manjaro--based on Archlinux
     pacman-mirrors -i -c China -m rank               //replace the update source in China
+add and update China Tsinghua sources in the file
+
     /etc/pacman.conf                                 //Meaning: source storage directory file
     [archlinux]
     Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
-    /*Meaning: add and update China Tsinghua sources in the file*/
 
 ### 2)Blackarch
 -------------based on Archlinux
