@@ -8,10 +8,10 @@ This repository is used to store descriptions of commands and tools commonly use
 
 | OS  | Directory| Based| Difficulty| Content|
 | ---------- | -----------| -----------| -----------| -----------|
-| Manjaro   | [Page](#1-manjaro_based-on-archlinux)   | Archlinux   | +   | planning   |
-| Blackarch   | [Page](#2-blackarch_based-on-archlinux)   | Archlinux   | +++   | planning   |
-| Unbuntu   | [Page](#3-ubuntu_based-on-debian)   | Debian   | +   | planning   |
-| Kali   | [Page](#4-kali_based-on-debian)   | Debian   | ++   | [Go](https://github.com/pro1tocol/Linux-Novice-Function-1.0.1/tree/main/Kali)   |
+| Manjaro   | [Page](#1-manjaro)   | Archlinux   | +   | planning   |
+| Blackarch   | [Page](#2-blackarch)   | Archlinux   | +++   | planning   |
+| Unbuntu   | [Page](#3-ubuntu)   | Debian   | +   | planning   |
+| Kali   | [Page](#4-kali)   | Debian   | ++   | [Go](https://github.com/pro1tocol/Linux-Novice-Function-1.0.1/tree/main/Kali)   |
 
 </div>
 
@@ -27,7 +27,7 @@ Recommended vi/vim tool
 
 ## Integrate update sources for various OS
 
-## 1) `Manjaro`_based on Archlinux
+## 1) `Manjaro`
 replace the update source in China
 
     pacman-mirrors -i -c China -m rank
@@ -38,7 +38,7 @@ add and update China Tsinghua sources in the file
     [archlinux]
     Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
 
-## 2) `Blackarch`_based on Archlinux
+## 2) `Blackarch`
 modifying siglevel can exempt key verification
 
     /etc/pacman.conf
@@ -50,7 +50,7 @@ changing the mainland China update source also requires changes:
     /etc/pacman.d/mirrorlist
     /etc/pacman.d/blackarch-mirrorlist
 
-## 3) `Ubuntu`_based on Debian
+## 3) `Ubuntu`
 source storage directory file
 
     /etc/apt/sources.list
@@ -67,7 +67,7 @@ add and update China Aliyun sources in the file
     deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
     deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
 
-## 4) `Kali`_based on Debian
+## 4) `Kali`
 source storage directory file
 
     /etc/apt/sources.list
