@@ -8,10 +8,10 @@ This repository is used to store descriptions of commands and tools commonly use
 
 | OS  | Directory| Based| Difficulty| Content|
 | ---------- | -----------| -----------| -----------| -----------|
-| Manjaro   | [Go](#1-manjaro_based-on-archlinux)   | Archlinux   | +   | planning   |
-| Blackarch   | [Go](#2-blackarch_based-on-archlinux)   | Archlinux   | +++   | planning   |
-| Unbuntu   | [Go](#3-ubuntu_based-on-debian)   | Debian   | +   | planning   |
-| Kali   | [GO]()   | Debian   | ++   | planning   |
+| Manjaro   | [Page](#1-manjaro_based-on-archlinux)   | Archlinux   | +   | planning   |
+| Blackarch   | [Page](#2-blackarch_based-on-archlinux)   | Archlinux   | +++   | planning   |
+| Unbuntu   | [Page](#3-ubuntu_based-on-debian)   | Debian   | +   | planning   |
+| Kali   | [Page](#4-kali_based-on-debian)   | Debian   | ++   | planning   |
 
 </div>
 
