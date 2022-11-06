@@ -44,6 +44,8 @@ add and update China Tsinghua sources in the file
 
 [Archcraft-Details](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Archcraft)
 
+[back ↑ TOP](#linux-novice-function-102)
+
 ## `Manjaro`
 replace the update source in China
 
@@ -72,6 +74,8 @@ changing the mainland China update source also requires changes:
     /etc/pacman.d/blackarch-mirrorlist
 
 [Blackarch-Details](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Blackarch)
+
+[back ↑ TOP](#linux-novice-function-102)
 
 ## `Ubuntu`
 source storage directory file
@@ -110,6 +114,8 @@ add and update China USTC sources in the file
     deb http://mirrors.ustc.edu.cn/debian-security buster/updates main contrib non-free
 
 [Kali-Details](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Kali)
+
+[back ↑ TOP](#linux-novice-function-102)
 
 ## `Debian 10`
 source storage directory file
