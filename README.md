@@ -44,6 +44,7 @@ add and update China Tsinghua sources in the file
     
     # [chaotic-aur]
     # Include = /etc/pacman.d/chaotic-mirrorlist
+The `chaotic-aur` source has speed and copyright issues, it is recommended to cancel
 
 [Archcraft-Details](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Archcraft)
 
