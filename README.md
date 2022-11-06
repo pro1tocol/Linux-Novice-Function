@@ -98,7 +98,7 @@ add and update China Aliyun sources in the file
 
 [back ↑ TOP](#linux-novice-function-102)
 
-## `Kali`
+## `Kali-Linux`
 source storage directory file
 
     /etc/apt/sources.list
