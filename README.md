@@ -41,6 +41,9 @@ add and update China Tsinghua sources in the file
     /etc/pacman.conf
     [archlinux]
     Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
+    
+    # [chaotic-aur]
+    # Include = /etc/pacman.d/chaotic-mirrorlist
 
 [Archcraft-Details](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Archcraft)
 
