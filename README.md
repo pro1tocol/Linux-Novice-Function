@@ -147,7 +147,7 @@ adding the following sources increases the update time
 
 [back ↑ TOP](#linux-novice-function-135)
 
-## `Centos 7`
+## `CentOS 7`
 One-click replacement China Tsinghua sources
 
     sudo sed -e 's|^mirrorlist=|#mirrorlist=|g' \
