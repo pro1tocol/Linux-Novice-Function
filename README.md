@@ -8,7 +8,7 @@ Save for beginners
 
 <div align="center">
 
-| OS  | Directory| Based| Content|
+| OS  | Dir| Based| Link|
 | ---------- | -----------| -----------| -----------|
 | Archcraft   | [Page](#archcraft)   | Archlinux   | [Go](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Archcraft)   |
 | Manjaro   | [Page](#manjaro)   | Archlinux   | [Go](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Manjaro)   |
