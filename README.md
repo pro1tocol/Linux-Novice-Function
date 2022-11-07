@@ -1,4 +1,4 @@
-# Linux-Novice-Function-1.0.2
+# Linux-Novice-Function-1.3
 -----------------------------
 This repository is used to store descriptions of commands and tools commonly used in the Linux
 
@@ -53,7 +53,7 @@ The `chaotic-aur` source has speed and copyright issues, it is recommended to ca
 
 [Archcraft-Details](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Archcraft)
 
-[back ↑ TOP](#linux-novice-function-102)
+[back ↑ TOP](#linux-novice-function-13)
 
 ## `Manjaro`
 replace the update source in China
@@ -68,7 +68,7 @@ add and update China Tsinghua sources in the file
 
 [Manjaro-Details](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Manjaro)
 
-[back ↑ TOP](#linux-novice-function-102)
+[back ↑ TOP](#linux-novice-function-13)
 
 ## `Blackarch`
 modifying siglevel can exempt key verification
@@ -84,7 +84,7 @@ changing the mainland China update source also requires changes:
 
 [Blackarch-Details](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Blackarch)
 
-[back ↑ TOP](#linux-novice-function-102)
+[back ↑ TOP](#linux-novice-function-13)
 
 ## `Ubuntu`
 source storage directory file
@@ -105,7 +105,7 @@ add and update China Aliyun sources in the file
 
 [Ubuntu-Details](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Ubuntu)
 
-[back ↑ TOP](#linux-novice-function-102)
+[back ↑ TOP](#linux-novice-function-13)
 
 ## `Kali-Linux`
 source storage directory file
@@ -124,7 +124,7 @@ add and update China USTC sources in the file
 
 [Kali-Details](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Kali)
 
-[back ↑ TOP](#linux-novice-function-102)
+[back ↑ TOP](#linux-novice-function-13)
 
 ## `Debian 10`
 source storage directory file
@@ -145,4 +145,4 @@ adding the following sources increases the update time
 
 [Debian 10-finishing]()
 
-[back ↑ TOP](#linux-novice-function-102)
+[back ↑ TOP](#linux-novice-function-13)
