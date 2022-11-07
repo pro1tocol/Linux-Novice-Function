@@ -14,7 +14,7 @@ Save for beginners
 | Manjaro   | [Page](#manjaro)   | Archlinux   | [Go](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Manjaro)   |
 | Blackarch   | [Page](#blackarch)   | Archlinux   | [Go](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Blackarch)   |
 | Ubuntu   | [Page](#ubuntu)   | Debian   | [Go](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Ubuntu)   |
-| Kalilinux   | [Page](#kali)   | Debian   | [Go](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Kali)   |
+| Kalilinux   | [Page](#kali-linux)   | Debian   | [Go](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Kali)   |
 | Debian10   | [Page](#debian-10)   | FreeBSD   | [Go](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Debian%2010)   |
 | CentOS 7   | [Page](#centos-7)   | RHEL   | [finishing]()   |
 
