@@ -16,7 +16,7 @@ Save for beginners
 | Ubuntu   | [Page](#ubuntu)   | Debian   | [Go](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Ubuntu)   |
 | Kalilinux   | [Page](#kali)   | Debian   | [Go](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Kali)   |
 | Debian10   | [Page](#debian-10)   | FreeBSD   | [Go](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Debian%2010)   |
-| CentOS 7   | [finishing]()   | RHEL   | [finishing]()   |
+| CentOS 7   | [Page](#centos-7)   | RHEL   | [finishing]()   |
 
 </div>
 
