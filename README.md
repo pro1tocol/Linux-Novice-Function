@@ -35,6 +35,9 @@ Recommended vi/vim tool
 replace the update source in China
 
     reflector --verbose -c China --latest 12 --sort rate --threads 100 --save /etc/pacman.d/mirrorlist
+Sinicization
+
+    pacman -S adobe-source-han-sans-cn-fonts
 
 add and update China Tsinghua sources in the file
 
