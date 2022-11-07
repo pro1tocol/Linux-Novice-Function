@@ -148,9 +148,12 @@ adding the following sources increases the update time
 [back ↑ TOP](#linux-novice-function-135)
 
 ## `Centos 7`
-finishing....
+One-click replacement China Tsinghua sources
 
-    
+    sudo sed -e 's|^mirrorlist=|#mirrorlist=|g' \
+    sudo sed -e 's|^#baseurl=http://mirror.centos.org|baseurl=https://mirrors.tuna.tsinghua.edu.cn|g' \
+    sudo sed -i.bak \
+    sudo sed /etc/yum.repos.d/CentOS-*.repo
 
 [Centos 7-finishing]()
 
