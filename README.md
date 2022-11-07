@@ -146,3 +146,12 @@ adding the following sources increases the update time
 [Debian 10-finishing]()
 
 [back ↑ TOP](#linux-novice-function-13)
+
+## `Centos 7`
+finishing....
+
+    
+
+[Centos 7-finishing]()
+
+[back ↑ TOP](#linux-novice-function-13)
