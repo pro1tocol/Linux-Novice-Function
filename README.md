@@ -151,11 +151,10 @@ adding the following sources increases the update time
 One-click replacement China Tsinghua sources
 
     sudo sed -e 's|^mirrorlist=|#mirrorlist=|g' \
-          >
-            -e 's|^#baseurl=http://mirror.centos.org|baseurl=https://mirrors.tuna.tsinghua.edu.cn|g' \
-            -i.bak \
-            /etc/yum.repos.d/CentOS-*.repo
-          exit
+             -e 's|^#baseurl=http://mirror.centos.org|baseurl=https://mirrors.tuna.tsinghua.edu.cn|g' \
+             -i.bak \
+             /etc/yum.repos.d/CentOS-*.repo
+
 Update package cache
 
     yum makecache
