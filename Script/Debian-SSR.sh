@@ -1,6 +1,6 @@
 #!/bin/bash
 # shadowsocksR/SSR CentOS 7/8一键安装教程
-# Author: Asiaminers<https://www.asiaminers.com>
+# Author: dot1q
 
 
 RED="\033[31m"      # Error message
