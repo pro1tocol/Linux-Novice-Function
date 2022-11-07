@@ -154,7 +154,10 @@ One-click replacement China Tsinghua sources
     sudo sed -e 's|^#baseurl=http://mirror.centos.org|baseurl=https://mirrors.tuna.tsinghua.edu.cn|g' \
     sudo sed -i.bak \
     sudo sed /etc/yum.repos.d/CentOS-*.repo
+Update package cache
 
+    yum makecache
+    
 [Centos 7-finishing]()
 
 [back ↑ TOP](#linux-novice-function-135)
