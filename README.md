@@ -16,7 +16,7 @@ Save for beginners
 | Ubuntu   | [Page](#ubuntu)   | Debian   | [Go](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Ubuntu)   |
 | Kalilinux   | [Page](#kali-linux)   | Debian   | [Go](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Kali)   |
 | Debian10   | [Page](#debian-10)   | FreeBSD   | [Go](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Debian%2010)   |
-| CentOS 7   | [Page](#centos-7)   | RHEL   | [finishing]()   |
+| CentOS 7   | [Page](#centos-7)   | RHEL   | [Go](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/CentOS%207)   |
 
 </div>
 
@@ -158,6 +158,6 @@ Update package cache
 
     yum makecache
     
-[Centos 7-finishing]()
+[CentOS 7-Details](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/CentOS%207)
 
 [back ↑ TOP](#linux-novice-function-135)
