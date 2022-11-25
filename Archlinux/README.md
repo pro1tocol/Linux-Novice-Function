@@ -151,3 +151,76 @@ Start dhcp and wlan connect
     systemctl enable --now dhcpcd
     systemctl start iwd
 Network [connection method](#connect-wifi-network)
+Installation tool
+
+    pacman -S neofetch htop iftop
+Modify source [here]() and update system
+
+    pacman -Syy && pacman -Syu
+Default editor
+
+    vim ~/.bash_profile
+    export EDITOR='vim'
+Create common user and grant permission
+
+    useradd -m -G wheel -s /bin/bash alarm
+    passwd alarm
+    
+    EDITOR=vim visudo
+    %wheel ALL=(ALL) ALL
+Open 32-bit support library and Archlinux Chinese community repository
+
+    vim /etc/pacman.conf
+    [multilib]
+    Inclu...
+    
+    [archlinuxcn]
+    Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
+### `optional 1` KDE Plasma
+
+    pacman -S plasma-meta konsole dolphin yakuake
+    systemctl enable sddm
+    systemctl start sddm
+    reboot
+    
+Environment settings
+
+    sudo systemctl disable iwd
+    sudo systemctl stop iwd
+    sudo systemctl enable --now NetworkManager
+    
+    sudo pacman -S ntfs-3g adobe-source-han-serif-cn-fonts wqy-zenhei noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
+    sudo pacman -S ark packagekit-qt5 packagekit appstream-qt appstream gwenview mpv
+    sudo pacman -S fcitx5-im fcitx5-chinese-addons
+    
+    sudo vim /etc/environment
+    INPUT_METHOD=fcitx5
+    GTK_IM_MODULE=fcitx5
+    QT_IM_MODULE=fcitx5
+    XMODIFIERS=\@im=fcitx5
+    SDL_IM_MODULE=fcitx
+    
+    sudo pacman -S archlinuxcn-keyring
+    sudo pacman -S yay
+    
+    sudo vim ~/.bashrc
+    export EDITOR='vim'
+    
+    sudo systemctl enable --now bluetooth
+### `optional 2` Gnome
+
+    pacman -S gnome
+    systemctl enable gdm
+    reboot
+    
+Environment settings
+
+    sudo pacman -S dhcpcd iwd networkmanager modemmanager bluez bluez-utils pulseaudio-bluetooth
+    sudo pacman -S qrtr rmtfs git wget ntfs-3g usbutils
+    systemctl enable NetworkManager bluetooth qrtr-ns rmtfs 
+    systemctl enable ModemManager
+    
+    pacman -S noto-fonts noto-fonts-cjk ibus ibus-pinyin adobe-source-han-serif-cn-fonts wqy-zenhei noto-fonts-emoji noto-fonts-extra
+
+
+    
