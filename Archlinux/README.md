@@ -86,6 +86,8 @@ Mount partition
     mount /dev/[efi partition name] /mnt/boot/efi
     
     mkdir /mnt/home
-    mount /dev/[home partition name] /mnt/home
+    mount /dev/[user partition name] /mnt/home
+    
+    swapon /dev[swap partition name]
     
 
