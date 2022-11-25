@@ -12,7 +12,7 @@
 | NO.1   | [Disk](#write-to-disk)   |
 | NO.2   | [Chroot](#change-root)   |
 | NO.3   | [Uefi](#uefi-setting)   |
-| NO.4   | [Deploy]()   |
+| NO.4   | [Deploy](#deploy)   |
 
 ## Boot disk creation
 ##### `1`.Flash drive( at least 4G storage space )
@@ -220,7 +220,9 @@ Environment settings
     systemctl enable NetworkManager bluetooth qrtr-ns rmtfs 
     systemctl enable ModemManager
     
-    pacman -S noto-fonts noto-fonts-cjk ibus ibus-pinyin adobe-source-han-serif-cn-fonts wqy-zenhei noto-fonts-emoji noto-fonts-extra
+    sudo pacman -S noto-fonts noto-fonts-cjk ibus ibus-pinyin adobe-source-han-serif-cn-fonts wqy-zenhei noto-fonts-emoji noto-fonts-extra
+    echo 'LANG=zh_CN.UTF-8'  > /etc/locale.conf
+    reboot
 
 
     
