@@ -9,7 +9,7 @@
 
 | Num  | Menu|
 | ---------- | -----------|
-| NO.1   | [Disk]()   |
+| NO.1   | [Disk](#write-to-disk)   |
 | NO.2   | [Chroot]()   |
 | NO.3   | [Uefi]()   |
 | NO.4   | [Deploy]()   |
