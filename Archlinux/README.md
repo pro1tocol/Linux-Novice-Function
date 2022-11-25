@@ -154,7 +154,7 @@ Network [connection method](#connect-wifi-network)
 Installation tool
 
     pacman -S neofetch htop iftop
-Modify source [here]() and update system
+Modify source [here](https://github.com/pro1tocol/Linux-Novice-Function#archlinux) and update system
 
     pacman -Syy && pacman -Syu
 Default editor
