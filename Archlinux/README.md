@@ -179,8 +179,13 @@ Open 32-bit support library and Archlinux Chinese community repository
 ### ` optional 1 ` KDE Plasma
 
     pacman -S plasma-meta konsole dolphin yakuake
+    pacman -S qt5-virtualkeyboard onboard kded-rotation-git
     systemctl enable sddm
     systemctl start sddm
+    
+    vim /etc/sddm.conf.d/virtualkbd.conf
+    [General]
+    InputMethod=qtvirtualkeyboard
     reboot
     
 Environment settings
@@ -190,7 +195,7 @@ Environment settings
     sudo systemctl enable --now NetworkManager
     
     sudo pacman -S ntfs-3g adobe-source-han-serif-cn-fonts wqy-zenhei noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
-    sudo pacman -S ark packagekit-qt5 packagekit appstream-qt appstream gwenview mpv
+    sudo pacman -S ark packagekit-qt5 packagekit appstream-qt appstream gwenview mpv 
     sudo pacman -S fcitx5-im fcitx5-chinese-addons
     
     sudo vim /etc/environment
@@ -223,6 +228,19 @@ Environment settings
     sudo pacman -S noto-fonts noto-fonts-cjk ibus ibus-pinyin adobe-source-han-serif-cn-fonts wqy-zenhei noto-fonts-emoji noto-fonts-extra
     echo 'LANG=zh_CN.UTF-8'  > /etc/locale.conf
     reboot
+----------------------------------------------
+## Other setting
 
+Add users and permissions
 
+    useradd -m -s /bin/bash alarm
+    sudo vim /etc/sudoers
+    alarm ALL=(ALL) ALL
+Environment variable switch
+
+    echo $SHELL
+    cat /etc/shells
+    chsh -s /bin/bash
+    chsh -s /bin/zsh
     
+
