@@ -244,4 +244,4 @@ Environment variable switch
     chsh -s /bin/bash
     chsh -s /bin/zsh
     
-
+[back to Archlinux](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Archlinux)
