@@ -144,4 +144,10 @@ Finish installation
     umount -R /mnt
     reboot
 ----------------------------------------------
-## hao
+## Deploy
+
+Start dhcp and wlan connect
+
+    systemctl enable --now dhcpcd
+    systemctl start iwd
+Network [connection method]()
