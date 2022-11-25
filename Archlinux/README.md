@@ -11,7 +11,7 @@
 | ---------- | -----------|
 | NO.1   | [Disk](#write-to-disk)   |
 | NO.2   | [Chroot](#change-root)   |
-| NO.3   | [Uefi]()   |
+| NO.3   | [Uefi](#uefi-setting)   |
 | NO.4   | [Deploy]()   |
 
 ## Boot disk creation
