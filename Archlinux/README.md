@@ -9,5 +9,5 @@ The installation of the archlinux system does not have a graphical interface, an
 | 2   | [Chroot]()   |
 | 3   | [Uefi]()   |
 | 4   | [Deploy]()   |
-
+----------------------------------------------
 ## Boot disk creation
