@@ -165,18 +165,24 @@ Update package cache
 [back ↑ TOP](#linux-novice-function-135)
 
 ## `Archlinux`
-Replacement China Tsinghua sources(/etc/pacman.d/mirrorlist)
+Replacement China Tsinghua sources
 
-x86_64
+source storage directory file
+
+    /etc/pacman.d/mirrorlist
+  x86_64
 
     Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
-arm64
+  arm64
 
     Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxarm/$arch/$repo
-Third party sources(/etc/pacman.conf)
+Third party sources
 
     [archlinuxcn]
     Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
+Source storage directory file
+
+    /etc/pacman.conf
 
 Update package cache
 
