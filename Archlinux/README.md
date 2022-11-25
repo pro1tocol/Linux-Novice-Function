@@ -9,9 +9,9 @@
 
 | Num  | Menu|
 | ---------- | -----------|
-| 1   | [Disk]()   |
-| 2   | [Chroot]()   |
-| 3   | [Uefi]()   |
-| 4   | [Deploy]()   |
+| NO.1   | [Disk]()   |
+| NO.2   | [Chroot]()   |
+| NO.3   | [Uefi]()   |
+| NO.4   | [Deploy]()   |
 ----------------------------------------------
 ## Boot disk creation
