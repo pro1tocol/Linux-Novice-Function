@@ -63,6 +63,7 @@ Show partition status
     lsblk
     fdisk -l
     df -h
+    free -h
 Start hard disk partition
 
     cfdisk /dev/sdx
@@ -89,5 +90,55 @@ Mount partition
     mount /dev/[user partition name] /mnt/home
     
     swapon /dev[swap partition name]
-    
+Installed system
 
+    pacstrap /mnt [base base-devel/bash-completion] zsh-completions linux linux-firmware
+    pacstrap /mnt dhcpcd iwd vim sudo zsh zsh-completions
+    pacstrap /mnt vim [intel-ucode/amd-ucode]
+Generating and Querying Parameters
+
+    genfstab -U /mnt > /mnt/etc/fstab
+    cat /mnt/etc/fstab
+----------------------------------------------
+## Change root
+
+Switch system
+
+    arch-chroot /mnt
+Setting hostname and timezone
+
+    vim /etc/hostname
+    
+    vim /etc/hosts
+    127.0.0.1   localhost
+    ::1         localhost
+    127.0.1.1   xxx.localdomain	xxx
+    
+    ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+    hwclock --systohc
+Setting language
+
+    vim /etc/locale.gen
+    en_US.UTF-8 UTF-8
+    zh_CN.UTF-8 UTF-8
+    locale-gen
+    echo 'LANG=en_US.UTF-8'  > /etc/locale.conf
+Setting root password
+
+    passwd root
+Generate startup items
+
+    pacman -S grub efibootmgr [os-prober]
+    grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=ARCH
+    
+    vim /etc/default/grub
+    ="loglevel=5 nowatchdog"
+    
+    grub-mkconfig -o /boot/grub/grub.cfg
+Finish installation
+
+    exit
+    umount -R /mnt
+    reboot
+----------------------------------------------
+## hao
