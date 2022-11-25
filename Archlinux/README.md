@@ -225,7 +225,7 @@ Environment settings
     systemctl enable NetworkManager bluetooth qrtr-ns rmtfs 
     systemctl enable ModemManager
     
-    sudo pacman -S noto-fonts noto-fonts-cjk ibus ibus-pinyin
+    sudo pacman -S noto-fonts noto-fonts-cjk ibus ibus-pinyin gedit mpv
     sudo pacman -S adobe-source-han-serif-cn-fonts wqy-zenhei noto-fonts-emoji noto-fonts-extra
     echo 'LANG=zh_CN.UTF-8'  > /etc/locale.conf
     reboot
