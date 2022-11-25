@@ -166,6 +166,7 @@ Update package cache
 
 ## `Archlinux`
 Replacement China Tsinghua sources(/etc/pacman.d/mirrorlist)
+
 x86_64
 
     Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
@@ -181,6 +182,6 @@ Update package cache
 
     pacman -Syy && pacman -Syu
     
-[Archlinux-Details](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/CentOS%207)
+[Archlinux-Details](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Archlinux)
 
 [back ↑ TOP](#linux-novice-function-135)
