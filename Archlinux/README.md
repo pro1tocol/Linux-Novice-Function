@@ -126,6 +126,9 @@ Setting language
 Setting root password
 
     passwd root
+----------------------------------------------
+## UEFI Setting
+
 Generate startup items
 
     pacman -S grub efibootmgr [os-prober]
