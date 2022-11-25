@@ -62,6 +62,7 @@ Show partition status
 
     lsblk
     fdisk -l
+    df -h
 Start hard disk partition
 
     cfdisk /dev/sdx
