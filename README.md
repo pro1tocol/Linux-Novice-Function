@@ -167,7 +167,7 @@ Update package cache
 ## `Archlinux`
 Replacement China Tsinghua sources
 
-source storage directory file
+Source storage directory file
 
     /etc/pacman.d/mirrorlist
   x86_64
@@ -176,14 +176,12 @@ source storage directory file
   arm64
 
     Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxarm/$arch/$repo
-Third party sources
-
-    [archlinuxcn]
-    Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
-Source storage directory file
+Third party source and storage directory file
 
     /etc/pacman.conf
-
+    
+    [archlinuxcn]
+    Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 Update package cache
 
     pacman -Syy && pacman -Syu
