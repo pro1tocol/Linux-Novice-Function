@@ -176,7 +176,7 @@ Open 32-bit support library and Archlinux Chinese community repository
     
     [archlinuxcn]
     Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
-### `optional 1` KDE Plasma
+### ` optional 1 ` KDE Plasma
 
     pacman -S plasma-meta konsole dolphin yakuake
     systemctl enable sddm
@@ -207,7 +207,7 @@ Environment settings
     export EDITOR='vim'
     
     sudo systemctl enable --now bluetooth
-### `optional 2` Gnome
+### ` optional 2 ` Gnome
 
     pacman -S gnome
     systemctl enable gdm
