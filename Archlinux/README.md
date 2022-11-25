@@ -40,7 +40,7 @@ Check UEFI mode
 Check network card installed
 
     lspci -k | grep Network
-##### Connect WIFI network
+#### Connect WIFI network
 
     systemctl status iwd
     systemctl start iwd
@@ -150,4 +150,4 @@ Start dhcp and wlan connect
 
     systemctl enable --now dhcpcd
     systemctl start iwd
-Network [connection method]()
+Network [connection method](#connect-wifi-network)
