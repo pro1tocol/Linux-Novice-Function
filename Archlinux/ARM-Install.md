@@ -163,6 +163,7 @@ Basic system configuration ( return chroot )
 
 Timezone setting
 
+    sudo chroot arch
     ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
     vim /etc/locale.gen
     en_US.UTF-8 UTF-8
@@ -213,7 +214,7 @@ Add danctnix source
     pacman-key --init
     pacman-key --populate danctnix
     
-    pacman -Syy
+    pacman -Syy && pacman -Syu
 Install the USB network adapter
 
     pacman -Sy danctnix-usb-tethering
@@ -246,7 +247,7 @@ Remake Modemanager ( download [PKGBUILD](https://github.com/pro1tocol/Linux-Novi
     su alarm
     mkdir ~/modemmanager
     cd ~/modemmanager
-    wget https://github.com/pro1tocol/Linux-Novice-Function/blob/main/Archlinux/PKGBUILD
+    wget https://raw.githubusercontent.com/pro1tocol/Linux-Novice-Function/main/Archlinux/PKGBUILD
     makepkg -rsi
     exit
 GRUB settings （ download folder [efi](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Archlinux/boot/efi) and [grub](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Archlinux/boot/grub), recommended download tool: [DownGit](https://minhaskamal.github.io/DownGit/#/home))
