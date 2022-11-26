@@ -11,4 +11,5 @@ Models    = A6010, A6013
 
 thanks：@snnbyyds
 Dual system coexistence Android 64G and Archlinux 64G
+
 -----------------------------------------
