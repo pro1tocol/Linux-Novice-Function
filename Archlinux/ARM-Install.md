@@ -239,6 +239,34 @@ Install such as alsa and call audio ( [alsa]() and [q6voiced]() )
     pacman -U q6voiced-0_git20210408-0-aarch64.pkg.tar.zst
     systemctl enable q6voiced
     echo 'snd-soc-tfa98xx' > /etc/modules-load.d/snd-soc-tfa98xx.conf
-Remake Modemanager ( sound work )
+Remake Modemanager ( download [PKGBUILD](https://github.com/pro1tocol/Linux-Novice-Function/blob/main/Archlinux/PKGBUILD) )
 
+!! It is best to execute after the system is officially started
+
+    su alarm
+    mkdir ~/modemmanager
+    cd ~/modemmanager
+    wget https://github.com/pro1tocol/Linux-Novice-Function/blob/main/Archlinux/PKGBUILD
+    makepkg -rsi
+Packaging system
+
+    pacman -Scc
+    su alarm
+    cat /dev/null > ~/.bash_history && history -c && exit
+    cat /dev/null > ~/.bash_history && history -c
+    exit
     
+    sudo umount ../arch/run
+    sudo umount ../arch/sys
+    sudo umount ../arch/proc
+    sudo umount ../arch/dev/pts
+    sudo umount ../arch/dev
+To solve the mount failure, you can restart Ubuntu and remount
+    
+    sudo mount archlinux.img arch
+Encapsulation
+
+    cd ../arch
+    sudo tar -czvf ../Oneplus6t-Archlinux.tar.gz *
+-----------------------------------------
+### Step No.4 
