@@ -218,4 +218,19 @@ Install the USB network adapter
 
     pacman -Sy danctnix-usb-tethering
     systemctl enable usb-tethering.service
+Install the fonts pack
+    
+    pacman -S noto-fonts noto-fonts-cjk ibus ibus-pinyin gedit mpv
+    pacman -S adobe-source-han-serif-cn-fonts wqy-zenhei noto-fonts-emoji noto-fonts-extra
+Deploy yay
+
+    su alarm
+    cd ~
+    git clone https://aur.archlinux.org/yay-bin.git
+    cd yay-bin && makepkg -si
+    exit
+Install the `gnome` desktop environment
+
+    pacman -S gnome
+    systemctl enable gdm
 
