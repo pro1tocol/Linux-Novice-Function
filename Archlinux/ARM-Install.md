@@ -233,4 +233,12 @@ Install the `gnome` desktop environment
 
     pacman -S gnome
     systemctl enable gdm
+Install such as alsa and call audio ( [alsa]() and [q6voiced]() )
 
+    pacman -U alsa-ucm-oneplus-0.5.9-0-any.pkg.tar.zst
+    pacman -U q6voiced-0_git20210408-0-aarch64.pkg.tar.zst
+    systemctl enable q6voiced
+    echo 'snd-soc-tfa98xx' > /etc/modules-load.d/snd-soc-tfa98xx.conf
+Remake Modemanager ( sound work )
+
+    
