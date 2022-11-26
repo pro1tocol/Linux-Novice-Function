@@ -1,4 +1,4 @@
-# This article mainly explains how to install the Archlinux on ARM device
+# This article mainly explains how to install Archlinux on ARM device
 -----------------------------------------
 
 <div align="center">
@@ -68,7 +68,7 @@ System installation and deployment ( you need to do it in Ubuntu 22.04 LTS )
 
 Install related dependencies
 
-    sudo apt install build-essential openssl pkg-config libssl-dev libncurses5-dev pkg-config minizip libelf-dev flex bison vim
+    sudo apt install build-essential openssl pkg-config libssl-dev libncurses5-dev pkg-config minizip libelf-dev flex bison vim sudo
     sudo apt install libc6-dev libidn11-dev rsync bc liblz4-tool install gcc-aarch64-linux-gnu dpkg-dev dpkg git wget qemu-user-static
 Find the kernel version you need, check [here](https://gitlab.com/sdm845-mainline/linux)
 
@@ -107,6 +107,7 @@ Initialization
     pacman-key --init
     pacman-key --populate archlinuxarm
     pacman -Syy && pacman -Syu
+    pacman -S git wget vim sudo dpkg
 Uninstall old kernel and firmware (done and exit chroot)
 
     pacman -Q | grep -i linux
@@ -156,6 +157,65 @@ Download and copy ( [sdm845-oneplus-fajita.dtb](https://github.com/pro1tocol/Lin
     exit
     cp -r sdm845-oneplus-fajita.dtb ../arch/boot
     cp -r OnePlus6T.dtb ../arch/boot
+-----------------------------------------
+### Step No.3 
+Basic system configuration ( return chroot )
 
+Timezone setting
 
+    ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+    vim /etc/locale.gen
+    en_US.UTF-8 UTF-8
+    zh_CN.UTF-8 UTF-8
+    locale-gen
+Setting hostname ( must be consistent, otherwise an error will be reported )
+
+    echo 'OnePlus6T' > /etc/hostname
+Set up a non-root user
+
+    passwd alarm
+    usermod -aG wheel alarm
+    
+    EDITOR=vim visudo
+    %wheel ALL=(ALL:ALL) ALL
+Install necessary packages
+
+    pacman -S base base-devel dhcpcd iwd
+    pacman -S grub efibootmgr
+    
+    pacman -S networkmanager modemmanager
+    pacman -S bluez bluez-utils pulseaudio-bluetooth
+    pacman -S qrtr rmtfs
+    systemctl enable NetworkManager bluetooth qrtr-ns rmtfs 
+    systemctl enable ModemManager
+    
+    pacman -S ntfs-3g usbutils
+Install pd-mapper and tqftpserv
+
+    git clone https://hub.fastgit.org/andersson/pd-mapper.git
+    git clone https://hub.fastgit.org/andersson/tqftpserv.git
+    
+    cd pd-mapper && make && make install && cd ..
+    cd tqftpserv && make && make install && cd ..
+    
+    rm -rf tqftpserv pd-mapper
+    sudo systemctl enable tqftpserv pd-mapper
+Add danctnix source
+
+    vim /etc/pacman.conf
+    [danctnix]
+    Server = https://p64.arikawa-hi.me/$repo/$arch/
+    
+    cd ~
+    wget https://p64.arikawa-hi.me/danctnix/aarch64/danctnix-keyring-2-1-any.pkg.tar.xz
+    pacman -U danctnix-keyring-2-1-any.pkg.tar.xz
+    
+    pacman-key --init
+    pacman-key --populate danctnix
+    
+    pacman -Syy
+Install the USB network adapter
+
+    pacman -Sy danctnix-usb-tethering
+    systemctl enable usb-tethering.service
 
