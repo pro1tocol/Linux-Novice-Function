@@ -1,4 +1,4 @@
-# This article mainly explains how to install the Archlinux system on the ARM device
+# This article mainly explains how to install the Archlinux on ARM device
 -----------------------------------------
 
 <div align="center">
@@ -21,4 +21,5 @@ thanks：@snnbyyds
 
 Dual system coexistence Android 64G and Archlinux 64G
 
+</div>
 -----------------------------------------
