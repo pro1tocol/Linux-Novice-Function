@@ -122,3 +122,7 @@ Install new kernel and firmware (dowload [file](https://stor.classfun.cn:4443/s/
     cp -r firmware-atheros_20210818-1_all.deb ../arch/root/
     cp -r firmware-oneplus6_0.0.2_all.deb ../arch/root/
     cp -r firmware-qcom-soc_20210818-1_all.deb ../arch/root/
+Return to the chroot environment to continue configuration
+
+    sudo chroot arch
+    
