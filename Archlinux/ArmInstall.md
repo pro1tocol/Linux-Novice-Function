@@ -61,3 +61,44 @@ Record the `UUID` of the arch partition
     mkdir esp/EFI
     cp -r /sdcard/arch/ /esp/EFI
     cp -r /sdcard/BOOT/ /esp/EFI
+    exit
+-----------------------------------------
+### Step No.2 
+System installation and deployment ( you need to do it in Ubuntu 22.04 LTS )
+
+Install related dependencies
+
+    sudo apt install build-essential openssl pkg-config libssl-dev libncurses5-dev pkg-config minizip libelf-dev flex bison
+    sudo apt install libc6-dev libidn11-dev rsync bc liblz4-tool install gcc-aarch64-linux-gnu dpkg-dev dpkg git wget qemu-user-static
+Find the kernel version you need, check [here](https://gitlab.com/sdm845-mainline/linux)
+
+It is recommended to use the relatively stable version 5.19
+
+    git clone https://gitlab.com/sdm845-mainline/linux.git -b sdm845/5.18-release
+At this point a `linux` folder will be generated and entered
+
+    cd linux
+    make ARCH=arm64 defconfig sdm845.config
+    make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j$(nproc)
+    cd ..
+Download Archlinux-ARM system files, check [here](http://fl.us.mirror.archlinuxarm.org/os/ArchLinuxARM-aarch64-latest.tar.gz)
+
+Make rootfs and enter chroot
+
+    dd if=/dev/zero of=archlinux.img bs=1G count=6
+    mkfs.ext4 archlinux.img
+    mkdir arch
+    sudo mount archlinux.img arch
+    cd arch
+    sudo tar -xpvf ../ArchLinuxARM-aarch64-latest.tar.gz
+    
+    cd ..
+    sudo mount --bind /dev arch/dev
+    sudo mount -t devpts devpts arch/dev/pts -o gid=5,mode=620
+    sudo mount -t proc proc arch/proc
+    sudo mount -t sysfs sysfs arch/sys
+    sudo mount -t tmpfs tmpfs arch/run
+    
+    sudo rm -rf arch/etc/resolv.conf && sudo cp /etc/resolv.conf arch/etc/
+    
+    sudo chroot arch
