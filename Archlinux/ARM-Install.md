@@ -290,6 +290,15 @@ Enter twrp to write to the device
     
     cd ~/temp
     tar -xpvf /sdcard/Oneplus6t-Archlinux.tar.gz
+Enter bootloader switch partition
+
+    fastboot devices
+    fastboot set_active b
+Write UEFI recovery ( dowload [edk2-msm](https://github.com/edk2-porting/edk2-msm/releases) )
+
+    fastboot flash boot boot-fajita.img
+    fastboot reboot
+
 # Done and enjoy ! ~!
 
 [`GotoTOP`](#this-article-mainly-explains-how-to-install-archlinux-on-arm-device)
