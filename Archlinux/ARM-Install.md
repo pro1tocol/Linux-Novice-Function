@@ -281,7 +281,7 @@ Packaging system
     sudo umount ../arch/proc
     sudo umount ../arch/dev/pts
     sudo umount ../arch/dev
-To solve the mount failure, you can restart Ubuntu and remount
+To solve the umount failure, you can restart Ubuntu and remount
     
     sudo mount archlinux.img arch
 Encapsulation
