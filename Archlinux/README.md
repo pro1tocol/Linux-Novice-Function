@@ -152,6 +152,14 @@ Start dhcp and wlan connect
     systemctl start iwd
 Network [connection method](#connect-wifi-network)
 
+Open 32-bit support library and Archlinux Chinese community repository
+
+    vim /etc/pacman.conf
+    [multilib]
+    Inclu...
+    
+    [archlinuxcn]
+    Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 Modify source [here](https://github.com/pro1tocol/Linux-Novice-Function#archlinux) and update system
 
     pacman -Syy && pacman -Syu
@@ -169,14 +177,6 @@ Create common user and grant permission
     
     EDITOR=vim visudo
     %wheel ALL=(ALL: ALL) ALL
-Open 32-bit support library and Archlinux Chinese community repository
-
-    vim /etc/pacman.conf
-    [multilib]
-    Inclu...
-    
-    [archlinuxcn]
-    Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 ### ` optional 1 ` KDE Plasma
 
     pacman -S plasma-meta konsole dolphin yakuake
