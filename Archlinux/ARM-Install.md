@@ -151,4 +151,4 @@ Get new kernel version
 
     ls /usr/lib/modules
     mkinitcpio --generate /boot/initrd.img-5.19.16-sdm845 --kernel 5.19.16-sdm845
-Download and copy ( [sdm845-oneplus-fajita.dtb]() and [OnePlus6T.dtb]() )
+Download and copy ( [sdm845-oneplus-fajita.dtb](https://github.com/pro1tocol/Linux-Novice-Function/blob/main/Archlinux/sdm845-oneplus-fajita.dtb) and [OnePlus6T.dtb]() )
