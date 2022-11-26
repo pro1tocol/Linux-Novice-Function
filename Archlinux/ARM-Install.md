@@ -25,7 +25,7 @@ Dual system coexistence Android 64G and Archlinux 64G
 
 -----------------------------------------
 ### Step No.1 
-Storage partition configuration ( You need to `unlock` the mobile device and flash [`twrp.img`](https://twrp.me/oneplus/oneplus6t.html) )
+Storage partition configuration ( You need to `unlock` the mobile device and flash [`twrp 3.2.3-1.img`](https://twrp.me/oneplus/oneplus6t.html) )
 
 Into the recovery ( download [parted](https://github.com/pro1tocol/Linux-Novice-Function/blob/main/Archlinux/parted) )
 
