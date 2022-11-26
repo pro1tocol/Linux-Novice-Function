@@ -135,7 +135,7 @@ Return to the chroot environment to continue configuration
     dpkg -i firmware-qcom-soc_20210818-1_all.deb.deb
     mv ~/tfa98xx.cnt /usr/lib/firmware/
     ldconfig
-Find and  mkinitcpio.conf
+Find mkinitcpio.conf
 
     vim /etc/mkinitcpio.conf
     
@@ -252,8 +252,10 @@ Remake Modemanager ( download [PKGBUILD](https://github.com/pro1tocol/Linux-Novi
 GRUB settings （ download folder [efi](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Archlinux/boot/efi) and [grub](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Archlinux/boot/grub), recommended download tool: [DownGit](https://minhaskamal.github.io/DownGit/#/home))
 
     cd /boot
-    
-
+    download here
+    cd /boot/grub
+    wget https://raw.githubusercontent.com/pro1tocol/Linux-Novice-Function/main/Archlinux/grub.cfg
+Replace all `UUIDs` in the grub.cfg file
 
 Packaging system
 
