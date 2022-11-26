@@ -248,6 +248,13 @@ Remake Modemanager ( download [PKGBUILD](https://github.com/pro1tocol/Linux-Novi
     cd ~/modemmanager
     wget https://github.com/pro1tocol/Linux-Novice-Function/blob/main/Archlinux/PKGBUILD
     makepkg -rsi
+    exit
+GRUB settings （ download folder [efi]() and [grub]() )
+
+    cd /boot
+    
+
+
 Packaging system
 
     pacman -Scc
