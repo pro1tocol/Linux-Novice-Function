@@ -147,3 +147,8 @@ Find and  mkinitcpio.conf
 Revise
     
     BINARIES=(/usr/lib/firmware/qcom/sdm845/oneplus6/a630_zap.mbn /usr/lib/firmware/qcom/sdm845/oneplus6/ipa_fws.mbn)
+Get new kernel version
+
+    ls /usr/lib/modules
+    mkinitcpio --generate /boot/initrd.img-5.19.16-sdm845 --kernel 5.19.16-sdm845
+Download and copy ( [sdm845-oneplus-fajita.dtb]() and [OnePlus6T.dtb]() )
