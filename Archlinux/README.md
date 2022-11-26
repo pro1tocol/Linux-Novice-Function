@@ -151,12 +151,13 @@ Start dhcp and wlan connect
     systemctl enable --now dhcpcd
     systemctl start iwd
 Network [connection method](#connect-wifi-network)
-Installation tool
 
-    pacman -S neofetch htop iftop
 Modify source [here](https://github.com/pro1tocol/Linux-Novice-Function#archlinux) and update system
 
     pacman -Syy && pacman -Syu
+Installation tool
+
+    pacman -S neofetch htop iftop
 Default editor
 
     vim ~/.bash_profile
@@ -167,7 +168,7 @@ Create common user and grant permission
     passwd alarm
     
     EDITOR=vim visudo
-    %wheel ALL=(ALL) ALL
+    %wheel ALL=(ALL: ALL) ALL
 Open 32-bit support library and Archlinux Chinese community repository
 
     vim /etc/pacman.conf
@@ -220,7 +221,7 @@ Environment settings
     
 Environment settings
 
-    sudo pacman -S dhcpcd iwd networkmanager modemmanager bluez bluez-utils pulseaudio-bluetooth
+    sudo pacman -S networkmanager modemmanager bluez bluez-utils pulseaudio-bluetooth
     sudo pacman -S qrtr rmtfs git wget ntfs-3g usbutils
     systemctl enable NetworkManager bluetooth qrtr-ns rmtfs 
     systemctl enable ModemManager
@@ -232,11 +233,6 @@ Environment settings
 ----------------------------------------------
 ## Other setting
 
-Add users and permissions
-
-    useradd -m -s /bin/bash alarm
-    sudo vim /etc/sudoers
-    alarm ALL=(ALL) ALL
 Environment variable switch
 
     echo $SHELL
