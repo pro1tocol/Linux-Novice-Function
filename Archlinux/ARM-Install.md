@@ -314,4 +314,4 @@ Write UEFI recovery ( dowload [edk2-msm](https://github.com/edk2-porting/edk2-ms
 
 # Done and enjoy ! ~!
 
-## [`GotoTOP`](#this-article-mainly-explains-how-to-install-archlinux-on-arm-device)
+## [`GotoTOP`](#How-to-install-archlinux-on-arm-device)
