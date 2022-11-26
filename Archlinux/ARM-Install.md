@@ -1,11 +1,15 @@
 # This article mainly explains how to install Archlinux on ARM device
 -----------------------------------------
-[No.1Partition]()
-[No.2Construction]()
-[No.3Infrastructure]()
-[No.4Flash]()
 
 <div align="center">
+    
+[No.1Partition]()
+    
+[No.2Construction]()
+    
+[No.3Infrastructure]()
+    
+[No.4Flash]()
 
 The equipment information is as follows:
 
