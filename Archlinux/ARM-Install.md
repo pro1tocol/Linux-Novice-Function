@@ -233,7 +233,7 @@ Install the `gnome` desktop environment
 
     pacman -S gnome
     systemctl enable gdm
-Install such as alsa and call audio ( [alsa]() and [q6voiced]() )
+Install such as alsa and call audio ( [alsa](https://github.com/pro1tocol/Linux-Novice-Function/blob/main/Archlinux/alsa-ucm-oneplus-0.5.9-0-any.pkg.tar.zst) and [q6voiced](https://github.com/pro1tocol/Linux-Novice-Function/blob/main/Archlinux/q6voiced-0_git20210408-0-aarch64.pkg.tar.zst) )
 
     pacman -U alsa-ucm-oneplus-0.5.9-0-any.pkg.tar.zst
     pacman -U q6voiced-0_git20210408-0-aarch64.pkg.tar.zst
@@ -249,7 +249,7 @@ Remake Modemanager ( download [PKGBUILD](https://github.com/pro1tocol/Linux-Novi
     wget https://github.com/pro1tocol/Linux-Novice-Function/blob/main/Archlinux/PKGBUILD
     makepkg -rsi
     exit
-GRUB settings （ download folder [efi]() and [grub](), ecommended download tool: [DownGit](https://minhaskamal.github.io/DownGit/#/home))
+GRUB settings （ download folder [efi](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Archlinux/boot/efi) and [grub](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Archlinux/boot/grub), recommended download tool: [DownGit](https://minhaskamal.github.io/DownGit/#/home))
 
     cd /boot
     
