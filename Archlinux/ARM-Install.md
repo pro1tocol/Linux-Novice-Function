@@ -290,3 +290,5 @@ Enter twrp to write to the device
     cd ~/temp
     tar -xpvf /sdcard/Oneplus6t-Archlinux.tar.gz
 # Done and enjoy ! ~!
+
+[GotoTOP](#this-article-mainly-explains-how-to-install-archlinux-on-arm-device)
