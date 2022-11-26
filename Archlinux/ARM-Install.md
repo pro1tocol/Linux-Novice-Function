@@ -68,7 +68,7 @@ System installation and deployment ( you need to do it in Ubuntu 22.04 LTS )
 
 Install related dependencies
 
-    sudo apt install build-essential openssl pkg-config libssl-dev libncurses5-dev pkg-config minizip libelf-dev flex bison
+    sudo apt install build-essential openssl pkg-config libssl-dev libncurses5-dev pkg-config minizip libelf-dev flex bison vim
     sudo apt install libc6-dev libidn11-dev rsync bc liblz4-tool install gcc-aarch64-linux-gnu dpkg-dev dpkg git wget qemu-user-static
 Find the kernel version you need, check [here](https://gitlab.com/sdm845-mainline/linux)
 
@@ -122,7 +122,28 @@ Install new kernel and firmware (dowload [file](https://stor.classfun.cn:4443/s/
     cp -r firmware-atheros_20210818-1_all.deb ../arch/root/
     cp -r firmware-oneplus6_0.0.2_all.deb ../arch/root/
     cp -r firmware-qcom-soc_20210818-1_all.deb ../arch/root/
+download sound [file]()
+
+    cp -r tfa98xx.cnt ../arch/root/
 Return to the chroot environment to continue configuration
 
     sudo chroot arch
+    cd ~
+    dpkg -i firmware-atheros_20210818-1_all.deb.deb
+    dpkg -i firmware-oneplus6_0.0.2_all.deb.deb
+    dpkg -i firmware-qcom-soc_20210818-1_all.deb.deb
+    mv ~/tfa98xx.cnt /usr/lib/firmware/
+    ldconfig
+Find and  mkinitcpio.conf
+
+    vim /etc/mkinitcpio.conf
     
+    # BINARIES
+    # This setting includes any additional binaries a given user may
+    # wish into the CPIO image.  This is run last, so it may be used to
+    # override the actual binaries included by a given hook
+    # BINARIES are dependency parsed, so you may safely ignore libraries
+    BINARIES=()
+Revise
+    
+    BINARIES=(/usr/lib/firmware/qcom/sdm845/oneplus6/a630_zap.mbn /usr/lib/firmware/qcom/sdm845/oneplus6/ipa_fws.mbn)
