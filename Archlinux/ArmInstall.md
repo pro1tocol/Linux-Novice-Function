@@ -102,3 +102,18 @@ Make rootfs and enter chroot
     sudo rm -rf arch/etc/resolv.conf && sudo cp /etc/resolv.conf arch/etc/
     
     sudo chroot arch
+Initialization
+
+    pacman-key --init
+    pacman-key --populate archlinuxarm
+    pacman -Syy && pacman -Syu
+Uninstall old kernel and firmware (done and exit chroot)
+
+    pacman -Q | grep -i linux
+    pacman -R linux-aarch64 linux-firmware linux-firmware-whence
+    exit
+Install new kernel and firmware 
+
+    cd /linux
+    sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-  INSTALL_MOD_PATH=../arch modules_install
+    sudo make ARCH=arm64 INSTALL_PATH=../arch/boot install
