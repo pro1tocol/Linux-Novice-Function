@@ -3,14 +3,16 @@
 
 <div align="center">
     
-[No.1Partition]()
+[No.1Partition](#step-no1)
     
-[No.2Construction]()
+[No.2Construction](#step-no2)
     
-[No.3Infrastructure]()
+[No.3Infrastructure](#step-no3)
     
-[No.4Flash]()
+[No.4Flash](#step-no4)
 
+-----------------------------------------
+    
 The equipment information is as follows:
 
 OnePlus 6T
