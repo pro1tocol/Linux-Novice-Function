@@ -112,8 +112,13 @@ Uninstall old kernel and firmware (done and exit chroot)
     pacman -Q | grep -i linux
     pacman -R linux-aarch64 linux-firmware linux-firmware-whence
     exit
-Install new kernel and firmware 
+Install new kernel and firmware (dowload [file](https://stor.classfun.cn:4443/s/0Nsa) and decompress)
 
     cd /linux
     sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-  INSTALL_MOD_PATH=../arch modules_install
     sudo make ARCH=arm64 INSTALL_PATH=../arch/boot install
+    
+    sudo su
+    cp -r firmware-atheros_20210818-1_all.deb ../arch/root/
+    cp -r firmware-oneplus6_0.0.2_all.deb ../arch/root/
+    cp -r firmware-qcom-soc_20210818-1_all.deb ../arch/root/
