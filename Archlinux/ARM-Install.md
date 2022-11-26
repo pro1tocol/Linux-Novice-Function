@@ -50,7 +50,7 @@ Reboot recovery
     mke2fs -t ext4 /dev/block/by-name/userdata
     mke2fs -t ext4 /dev/block/by-name/arch
 Record the `UUID` of the arch partition
-#### Copy and deploy esp directory files ( download folder [arch]() and [BOOT]() )
+#### Copy and deploy esp directory files ( download folder [arch](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Archlinux/arch) and [BOOT](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Archlinux/BOOT) )
 
     adb push */arch /sdcard
     adb push */BOOT /sdcard
