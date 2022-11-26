@@ -249,7 +249,7 @@ Remake Modemanager ( download [PKGBUILD](https://github.com/pro1tocol/Linux-Novi
     wget https://github.com/pro1tocol/Linux-Novice-Function/blob/main/Archlinux/PKGBUILD
     makepkg -rsi
     exit
-GRUB settings （ download folder [efi]() and [grub]() Recommended download tool: [DownGit](https://minhaskamal.github.io/DownGit/#/home))
+GRUB settings （ download folder [efi]() and [grub](), ecommended download tool: [DownGit](https://minhaskamal.github.io/DownGit/#/home))
 
     cd /boot
     
