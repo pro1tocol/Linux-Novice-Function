@@ -50,4 +50,4 @@ Reboot recovery
     mke2fs -t ext4 /dev/block/by-name/userdata
     mke2fs -t ext4 /dev/block/by-name/arch
 Record the `UUID` of the arch partition
-    
+#### Copy and deploy esp directory files
