@@ -74,7 +74,7 @@ Find the kernel version you need, check [here](https://gitlab.com/sdm845-mainlin
 
 It is recommended to use the relatively stable version 5.19
 
-    git clone https://gitlab.com/sdm845-mainline/linux.git -b sdm845/5.18-release
+    git clone https://gitlab.com/sdm845-mainline/linux.git -b sdm845/5.19-release
 At this point a `linux` folder will be generated and entered
 
     cd linux
