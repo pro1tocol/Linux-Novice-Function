@@ -50,4 +50,14 @@ Reboot recovery
     mke2fs -t ext4 /dev/block/by-name/userdata
     mke2fs -t ext4 /dev/block/by-name/arch
 Record the `UUID` of the arch partition
-#### Copy and deploy esp directory files
+#### Copy and deploy esp directory files ( download folder [arch]() and [BOOT]() )
+
+    adb push */arch /sdcard
+    adb push */BOOT /sdcard
+    adb shell
+    
+    mkdir esp
+    mount /dev/block/by-name/esp esp
+    mkdir esp/EFI
+    cp -r /sdcard/arch/ /esp/EFI
+    cp -r /sdcard/BOOT/ /esp/EFI
