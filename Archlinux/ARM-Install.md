@@ -27,7 +27,7 @@ Dual system coexistence Android 64G and Archlinux 64G
 ### Step No.1 
 Storage partition configuration ( You need to `unlock` the mobile device and flash [`twrp.img`](https://twrp.me/oneplus/oneplus6t.html) )
 
-Into the recovery ( download [parted]() )
+Into the recovery ( download [parted](https://github.com/pro1tocol/Linux-Novice-Function/blob/main/Archlinux/parted) )
 
     adb push */parted /sdcard
     adb shell
@@ -50,7 +50,7 @@ Reboot recovery
     mke2fs -t ext4 /dev/block/by-name/userdata
     mke2fs -t ext4 /dev/block/by-name/arch
 Record the `UUID` of the arch partition
-#### Copy and deploy esp directory files ( download folder [arch](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Archlinux/arch) and [BOOT](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Archlinux/BOOT) )
+#### Copy and deploy esp directory files ( download folder [arch](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Archlinux/arch) and [BOOT](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Archlinux/BOOT), recommended download tool: [DownGit](https://minhaskamal.github.io/DownGit/#/home) )
 
     adb push */arch /sdcard
     adb push */BOOT /sdcard
@@ -279,3 +279,14 @@ Encapsulation
     sudo tar -czvf ../Oneplus6t-Archlinux.tar.gz *
 -----------------------------------------
 ### Step No.4 
+Enter twrp to write to the device
+
+    adb push ../Oneplus6t-Archlinux.tar.gz /sdcard
+    adb shell
+    cd ~
+    mkdir temp
+    mount /dev/block/by-name/arch ~/temp
+    
+    cd ~/temp
+    tar -xpvf /sdcard/Oneplus6t-Archlinux.tar.gz
+# Done and enjoy ! ~!
