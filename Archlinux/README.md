@@ -92,9 +92,9 @@ Mount partition
     swapon /dev[swap partition name]
 Installed system
 
-    pacstrap /mnt [base base-devel/bash-completion] zsh-completions linux linux-firmware
+    pacstrap /mnt base base-devel bash-completion linux linux-firmware
     pacstrap /mnt dhcpcd iwd vim sudo zsh zsh-completions
-    pacstrap /mnt vim [intel-ucode/amd-ucode]
+    pacstrap /mnt intel-ucode/amd-ucode
 Generating and Querying Parameters
 
     genfstab -U /mnt > /mnt/etc/fstab
