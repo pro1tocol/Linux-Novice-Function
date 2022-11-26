@@ -24,3 +24,4 @@ Dual system coexistence Android 64G and Archlinux 64G
 </div>
 
 -----------------------------------------
+### step No.1 Storage partition configuration ( You need to `unlock` the mobile device and flash [`twrp.img`](https://twrp.me/oneplus/oneplus6t.html) )
