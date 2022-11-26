@@ -1,7 +1,7 @@
-# This article mainly explains how to install Archlinux on ARM device
------------------------------------------
-
 <div align="center">
+
+# How to install Archlinux on ARM device
+-----------------------------------------
     
 [No.1Partition](#step-no1)
     
