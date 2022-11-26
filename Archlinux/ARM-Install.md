@@ -135,6 +135,7 @@ Install new kernel and firmware (dowload [file](https://stor.classfun.cn:4443/s/
     cp -r firmware-qcom-soc_20210818-1_all.deb ../arch/root/
 download sound [file](https://github.com/pro1tocol/Linux-Novice-Function/blob/main/Archlinux/tfa98xx.cnt)
 
+    wget https://github.com/pro1tocol/Linux-Novice-Function/raw/main/Archlinux/tfa98xx.cnt
     cp -r tfa98xx.cnt ../arch/root/
 Return to the chroot environment to continue configuration
 
