@@ -17,7 +17,7 @@ Adreno 630
 
 A6010, A6013
 
-thanks：@snnbyyds
+thanks：[@snnbyyds](https://forum.renegade-project.org/t/install-archlinux-on-your-oneplus-6t-oneplus-6-or-pocophone-f1/2530) and his team
 
 Dual system coexistence Android 64G and Archlinux 64G
 
