@@ -165,6 +165,8 @@ Get new kernel version
 Download and copy ( [sdm845-oneplus-fajita.dtb](https://github.com/pro1tocol/Linux-Novice-Function/blob/main/Archlinux/sdm845-oneplus-fajita.dtb) and [OnePlus6T.dtb](https://github.com/pro1tocol/Linux-Novice-Function/blob/main/Archlinux/OnePlus6T.dtb) )
 
     exit
+    wget https://github.com/pro1tocol/Linux-Novice-Function/raw/main/Archlinux/sdm845-oneplus-fajita.dtb
+    wget https://github.com/pro1tocol/Linux-Novice-Function/raw/main/Archlinux/OnePlus6T.dtb
     cp -r sdm845-oneplus-fajita.dtb ../arch/boot
     cp -r OnePlus6T.dtb ../arch/boot
 -----------------------------------------
