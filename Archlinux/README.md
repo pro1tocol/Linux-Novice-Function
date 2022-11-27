@@ -163,6 +163,8 @@ Open 32-bit support library and Archlinux Chinese community repository
 Modify source [here](https://github.com/pro1tocol/Linux-Novice-Function#archlinux) and update system
 
     pacman -Syy && pacman -Syu
+    pacman -S archlinuxcn-keyring
+    pacman -S yay
 Installation tool
 
     pacman -S neofetch htop iftop
