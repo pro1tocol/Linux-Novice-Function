@@ -241,5 +241,8 @@ Environment variable switch
     cat /etc/shells
     chsh -s /bin/bash
     chsh -s /bin/zsh
+Delete tools
+
+    pacman -Rs epiphany totem
     
 [back to Archlinux](#this-article-mainly-explains-the-system-installation-and-deployment)
