@@ -223,12 +223,16 @@ Add danctnix source
     [danctnix]
     Server = https://p64.arikawa-hi.me/$repo/$arch/
     
+    [archlinuxcn]
+    Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
+    
     cd ~
     wget https://p64.arikawa-hi.me/danctnix/aarch64/danctnix-keyring-2-1-any.pkg.tar.xz
     pacman -U danctnix-keyring-2-1-any.pkg.tar.xz
     
     pacman-key --init
     pacman-key --populate danctnix
+    pacman -S archlinuxcn-keyring
     
     pacman -Syy && pacman -Syu
 Install the USB network adapter
@@ -241,11 +245,7 @@ Install the fonts pack
     pacman -S adobe-source-han-serif-cn-fonts wqy-zenhei noto-fonts-emoji noto-fonts-extra
 Deploy yay
 
-    su alarm
-    cd ~
-    git clone https://aur.archlinux.org/yay-bin.git
-    cd yay-bin && makepkg -si
-    exit
+    pacman -S yay
 Install the `gnome` desktop environment
 
     pacman -S gnome
