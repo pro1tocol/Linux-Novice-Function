@@ -206,13 +206,16 @@ Install necessary packages
     pacman -S ntfs-3g usbutils
 Install pd-mapper and tqftpserv
 
-    git clone https://hub.fastgit.org/andersson/pd-mapper.git
-    git clone https://hub.fastgit.org/andersson/tqftpserv.git
+    su alarm && cd ~
+    mkdir pd-mapper-git && mkdir tqftpserv-git
     
-    cd pd-mapper && make && make install && cd ..
-    cd tqftpserv && make && make install && cd ..
+    cd pd-mapper-git
+    wget https://raw.githubusercontent.com/pro1tocol/Linux-Novice-Function/main/Archlinux/pd-mapper-git/PKGBUILD && makepkg -si && cd..
     
-    rm -rf tqftpserv pd-mapper
+    cd tqftpserv-git
+    wget https://raw.githubusercontent.com/pro1tocol/Linux-Novice-Function/main/Archlinux/tqftpserv-git/PKGBUILD && makepkg -si && cd..
+    
+    rm -rf pd-mapper-git tqftpserv-git
     sudo systemctl enable tqftpserv pd-mapper
 Add danctnix source
 
