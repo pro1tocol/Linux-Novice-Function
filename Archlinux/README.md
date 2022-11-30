@@ -244,5 +244,7 @@ Environment variable switch
 Delete tools
 
     pacman -Rs epiphany totem
+    pacman -R gnome-maps gnome-music
+    pacman -S gnome-tweaks gnome-shell-extensions gnome-shell-extensions-dash-to-dock
     
 [back to Archlinux](#this-article-mainly-explains-the-system-installation-and-deployment)
