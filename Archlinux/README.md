@@ -232,6 +232,9 @@ Environment settings
     sudo pacman -S adobe-source-han-serif-cn-fonts wqy-zenhei noto-fonts-emoji noto-fonts-extra
     echo 'LANG=zh_CN.UTF-8'  > /etc/locale.conf
     reboot
+Themes
+
+[Orchis](https://github.com/vinceliuice/Orchis-theme)
 ----------------------------------------------
 ## Other setting
 
