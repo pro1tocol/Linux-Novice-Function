@@ -247,6 +247,7 @@ Environment variable switch
 Optional tools
 
     epiphany-brower
+    libmalcontent-0-0
     totem
     gnome-maps
     gnome-music
