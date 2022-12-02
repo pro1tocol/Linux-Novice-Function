@@ -241,10 +241,14 @@ Environment variable switch
     cat /etc/shells
     chsh -s /bin/bash
     chsh -s /bin/zsh
-Delete tools
+Optional tools
 
-    pacman -Rs epiphany totem
-    pacman -R gnome-maps gnome-music
-    pacman -S gnome-tweaks gnome-shell-extensions gnome-shell-extensions-dash-to-dock
+    epiphany-brower
+    totem
+    gnome-maps
+    gnome-music
+    gnome-tweaks
+    gnome-shell-extensions
+    gnome-shell-extensions-dash-to-dock
     
 [back to Archlinux](#this-article-mainly-explains-the-system-installation-and-deployment)
