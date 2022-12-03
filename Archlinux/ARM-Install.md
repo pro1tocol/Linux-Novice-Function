@@ -79,7 +79,7 @@ System installation and deployment ( you need to do it in Ubuntu 22.04 LTS )
 Install related dependencies
 
     sudo apt install build-essential openssl pkg-config libssl-dev libncurses5-dev pkg-config minizip libelf-dev flex bison vim sudo
-    sudo apt install libc6-dev libidn11-dev rsync bc liblz4-tool install gcc-aarch64-linux-gnu dpkg-dev dpkg git wget qemu-user-static
+    sudo apt install libc6-dev libidn11-dev rsync bc liblz4-tool gcc-aarch64-linux-gnu dpkg-dev dpkg git wget qemu-user-static
 Find the kernel version you need, check [here](https://gitlab.com/sdm845-mainline/linux)
 
 It is recommended to use the relatively stable version 5.19
@@ -141,9 +141,9 @@ Return to the chroot environment to continue configuration
 
     sudo chroot arch
     cd ~
-    dpkg -i firmware-atheros_20210818-1_all.deb.deb
-    dpkg -i firmware-oneplus6_0.0.2_all.deb.deb
-    dpkg -i firmware-qcom-soc_20210818-1_all.deb.deb
+    dpkg -i firmware-atheros_20210818-1_all.deb
+    dpkg -i firmware-oneplus6_0.0.2_all.deb
+    dpkg -i firmware-qcom-soc_20210818-1_all.deb
     mv ~/tfa98xx.cnt /usr/lib/firmware/
     ldconfig
 Find mkinitcpio.conf
@@ -207,15 +207,10 @@ Install necessary packages
 Install pd-mapper and tqftpserv
 
     su alarm && cd ~
-    mkdir pd-mapper-git && mkdir tqftpserv-git
-    
-    cd pd-mapper-git
-    wget https://raw.githubusercontent.com/pro1tocol/Linux-Novice-Function/main/Archlinux/pd-mapper-git/PKGBUILD && makepkg -si && cd..
-    
-    cd tqftpserv-git
-    wget https://raw.githubusercontent.com/pro1tocol/Linux-Novice-Function/main/Archlinux/tqftpserv-git/PKGBUILD && makepkg -si && cd..
-    
-    rm -rf pd-mapper-git tqftpserv-git
+    git clone https://hub.fastgit.org/andersson/pd-mapper.git
+    git clone https://hub.fastgit.org/andersson/tqftpserv.git
+    cd pd-mapper && make && make install && cd ..
+    cd tqftpserv && make && make install && cd ..
     sudo systemctl enable tqftpserv pd-mapper
 Add danctnix source
 
@@ -232,9 +227,9 @@ Add danctnix source
     
     pacman-key --init
     pacman-key --populate danctnix
+    pacman -Syy
     pacman -S archlinuxcn-keyring
-    
-    pacman -Syy && pacman -Syu
+    pacman -Syu
 Install the USB network adapter
 
     pacman -Sy danctnix-usb-tethering
