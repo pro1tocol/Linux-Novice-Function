@@ -256,6 +256,9 @@ Optional tools
     totem
     gnome-maps
     gnome-music
+    gnome-text-editor
+    gnome-weather
+    
     gnome-tweaks
     gnome-shell-extensions
     gnome-shell-extensions-dash-to-dock
