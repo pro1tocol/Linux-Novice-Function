@@ -250,6 +250,8 @@ Environment variable switch
 Optional tools
 
     epiphany-brower
+    gnome-user-docs
+    yelp
     libmalcontent-0-0
     totem
     gnome-maps
