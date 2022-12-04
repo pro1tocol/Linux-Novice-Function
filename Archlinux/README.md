@@ -219,21 +219,21 @@ Environment settings
     
     sudo systemctl enable --now bluetooth
 ### ` optional 2 ` Gnome
-
-    pacman -S gnome
-    systemctl enable gdm
-    reboot
     
 Environment settings
 
-    sudo pacman -S networkmanager modemmanager bluez bluez-utils pulseaudio-bluetooth
-    sudo pacman -S qrtr rmtfs git wget ntfs-3g usbutils
-    systemctl enable NetworkManager bluetooth qrtr-ns rmtfs 
+    pacman -S networkmanager modemmanager bluez bluez-utils pulseaudio-bluetooth
+    pacman -S git wget ntfs-3g usbutils
+    systemctl enable NetworkManager bluetooth
     systemctl enable ModemManager
     
-    sudo pacman -S noto-fonts noto-fonts-cjk ibus ibus-pinyin gedit mpv
-    sudo pacman -S adobe-source-han-serif-cn-fonts wqy-zenhei noto-fonts-emoji noto-fonts-extra
+    pacman -S noto-fonts noto-fonts-cjk ibus ibus-pinyin mpv
+    pacman -S adobe-source-han-serif-cn-fonts wqy-zenhei noto-fonts-emoji noto-fonts-extra
     echo 'LANG=zh_CN.UTF-8'  > /etc/locale.conf
+    
+    pacman -S gnome
+    systemctl enable gdm
+
     reboot
 Themes
 
