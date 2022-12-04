@@ -259,6 +259,7 @@ Optional tools
     gnome-text-editor
     gnome-weather
     gnome-contacts
+    gnome-photos
     
     gnome-tweaks
     gnome-shell-extensions
