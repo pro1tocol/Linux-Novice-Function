@@ -90,6 +90,9 @@ Mount partition
     mount /dev/[user partition name] /mnt/home
     
     swapon /dev[swap partition name]
+Update key
+    
+    pacman -S archlinux-keyring && sudo pacman -Syy
 Installed system
 
     pacstrap /mnt base base-devel bash-completion linux linux-firmware
