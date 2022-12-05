@@ -239,15 +239,7 @@ Themes
 
 [Orchis](https://github.com/vinceliuice/Orchis-theme)
 ----------------------------------------------
-## Other setting
-
-Environment variable switch
-
-    echo $SHELL
-    cat /etc/shells
-    chsh -s /bin/bash
-    chsh -s /bin/zsh
-Optional tools
+## Optional tools
 
     epiphany-brower
     gnome-user-docs
