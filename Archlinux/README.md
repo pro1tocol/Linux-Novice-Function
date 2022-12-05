@@ -241,7 +241,7 @@ Themes
 ----------------------------------------------
 ## Optional tools
 
-    epiphany-brower
+    epiphany-browser
     gnome-user-docs
     yelp
     libmalcontent-0-0
@@ -256,5 +256,7 @@ Themes
     gnome-tweaks
     gnome-shell-extensions
     gnome-shell-extensions-dash-to-dock
+    
+    guake
     
 [back to Archlinux](#this-article-mainly-explains-the-system-installation-and-deployment)
