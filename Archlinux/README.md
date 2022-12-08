@@ -121,9 +121,13 @@ Setting hostname and timezone
     hwclock --systohc
 Setting language
 
+    pacman -S locales
+    dpkg-reconfigure locales
+
     vim /etc/locale.gen
     en_US.UTF-8 UTF-8
     zh_CN.UTF-8 UTF-8
+    
     locale-gen
     echo 'LANG=en_US.UTF-8'  > /etc/locale.conf
 Setting root password
