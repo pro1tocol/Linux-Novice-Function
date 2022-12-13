@@ -248,7 +248,6 @@ Themes
     epiphany-browser
     gnome-user-docs
     yelp
-    libmalcontent-0-0
     totem
     gnome-maps
     gnome-music
@@ -260,6 +259,7 @@ Themes
     gnome-tweaks
     gnome-shell-extensions
     gnome-shell-extensions-dash-to-dock
+    juno-theme-git
     
     guake
     
