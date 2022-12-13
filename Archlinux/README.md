@@ -26,8 +26,11 @@
 ## Write to disk
 
 !!! Notice: 
+
 1.There is enough free space on the disk
+
 2.Bios set UEFI boot mode
+
 3.Start the burned driver image and enter the `root`
 
 Disable service item
