@@ -246,7 +246,7 @@ Environment settings
     reboot
 Themes
 
-[Orchis](https://github.com/vinceliuice/Orchis-theme)
+[Orchis](https://github.com/vinceliuice/Orchis-theme)  [Yaru-Colors](https://github.com/Jannomag/Yaru-Colors)
 ----------------------------------------------
 ## Optional tools
 
