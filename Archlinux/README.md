@@ -175,7 +175,7 @@ Modify source [here](https://github.com/pro1tocol/Linux-Novice-Function#archlinu
     pacman-key --init
     pacman-key --populate archlinux
     pacman -Syy && pacman -Syu
-    pacman -S archlinuxcn-keyring
+    pacman -S archlinux-keyring archlinuxcn-keyring
     pacman -S yay
 Installation tool
 
