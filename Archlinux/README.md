@@ -172,6 +172,8 @@ Open 32-bit support library and Archlinux Chinese community repository
     Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 Modify source [here](https://github.com/pro1tocol/Linux-Novice-Function#archlinux) and update system
 
+    pacman-key --init
+    pacman-key --populate archlinux
     pacman -Syy && pacman -Syu
     pacman -S archlinuxcn-keyring
     pacman -S yay
