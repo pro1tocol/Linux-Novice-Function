@@ -7,3 +7,7 @@
 
     gnome-core
     ibus ibus-pinyin
+### Network-driver
+
+    firmware-atheros
+    firmware-iwlwifi
