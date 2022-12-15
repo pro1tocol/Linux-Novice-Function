@@ -143,6 +143,10 @@ adding the following sources increases the update time
     deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-updates main contrib non-free
     deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-backports main contrib non-free
     deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security buster/updates main contrib non-free
+wlan driver
+
+    deb http://httpredir.debian.org/debian/ buster main contrib non-free
+
 
 [Debian 10-Details](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Debian%2010)
 
