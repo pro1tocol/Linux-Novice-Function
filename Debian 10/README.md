@@ -11,3 +11,7 @@
 
     firmware-atheros
     firmware-iwlwifi
+### Graphics-driver
+
+    intel-media-va-driver-non-free
+    
