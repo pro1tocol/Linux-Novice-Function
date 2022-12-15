@@ -263,7 +263,7 @@ Themes
     
     gnome-tweaks
     gnome-shell-extensions
-    gnome-shell-extensions-dash-to-dock
+    gnome-shell-extension-dash-to-dock
     juno-theme-git
     
     guake
