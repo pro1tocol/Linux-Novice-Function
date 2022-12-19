@@ -1,3 +1,7 @@
+### User-setting
+
+    usermod -aG sudo qoant
+
 ### Fonts-install
 
     xfonts-intl-chinese
