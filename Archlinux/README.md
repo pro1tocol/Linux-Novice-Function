@@ -80,6 +80,30 @@ Save Settings
 
     write
     exit
+`LVM`configuration (optional)
+
+    parted /dev/sda
+    
+    mklabel gpt
+    mkpart ESP 2048s 513M
+    mkpart primary 513M -1
+    set 1 boot on
+    
+    mkfs.fat -F32 /dev/sda1
+    
+    pvcreate /dev/sda2
+    vgcreate archlinux /dev/sda2
+
+    lvcreate -L 4G archlinux -n swap
+    mkswap /dev/mapper/archlinux-swap
+    swapon /dev/mapper/archlinux-swap
+
+    lvcreate -l +100%FREE archlinux -n root
+    mkfs.ext4 /dev/mapper/archlinux-root
+Test LVM settings
+    
+    lvs
+
 Format and create ext4 subvolume
 
     mkfs.fat -F32 /dev/[efi partition name]
