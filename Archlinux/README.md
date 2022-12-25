@@ -71,8 +71,11 @@ Start hard disk partition
 
     cfdisk /dev/sdx
 `1`.Create EFI partition (At least 600MB and type "efi system")
+
 `2`.Create SWAP partition (At least memory 60% and type "linux sway")
+
 `3`.Create SYSTEM partition (all remaining space or user/root allocated separately)
+
 Save Settings
 
     write
