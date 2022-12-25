@@ -166,6 +166,13 @@ Setting root password
 ----------------------------------------------
 ## UEFI Setting
 
+`LVM`need to recompile the kernel to support systemd and lvm
+
+    lvm2
+    vim /etc/mkinitcpio.conf
+    
+    HOOKS=(base **systemd** ... block **sd-lvm2** filesystems)
+    mkinitcpio -p linux
 Generate startup items
 
     pacman -S grub efibootmgr [os-prober]
