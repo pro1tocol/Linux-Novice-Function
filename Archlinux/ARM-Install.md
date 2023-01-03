@@ -206,11 +206,11 @@ Install necessary packages
     pacman -S ntfs-3g usbutils
 Install pd-mapper and tqftpserv
 
-    su alarm && cd ~
+    su alarm && cd ~/
     git clone https://hub.fastgit.org/andersson/pd-mapper.git
     git clone https://hub.fastgit.org/andersson/tqftpserv.git
-    cd pd-mapper && make && make install && cd ..
-    cd tqftpserv && make && make install && cd ..
+    cd pd-mapper && make && sudo make install && cd ..
+    cd tqftpserv && make && sudo make install && cd ..
     sudo systemctl enable tqftpserv pd-mapper
 Add danctnix source
 
@@ -221,7 +221,7 @@ Add danctnix source
     [archlinuxcn]
     Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
     
-    cd ~
+    cd ~/
     wget https://p64.arikawa-hi.me/danctnix/aarch64/danctnix-keyring-2-1-any.pkg.tar.xz
     pacman -U danctnix-keyring-2-1-any.pkg.tar.xz
     
@@ -236,7 +236,7 @@ Install the USB network adapter
     systemctl enable usb-tethering.service
 Install the fonts pack
     
-    pacman -S noto-fonts noto-fonts-cjk ibus ibus-pinyin gedit mpv
+    pacman -S noto-fonts noto-fonts-cjk ibus ibus-pinyin mpv
     pacman -S adobe-source-han-serif-cn-fonts wqy-zenhei noto-fonts-emoji noto-fonts-extra
 Deploy yay
 
