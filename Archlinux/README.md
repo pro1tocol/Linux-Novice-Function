@@ -294,6 +294,7 @@ Themes
     gnome-weather
     gnome-contacts
     gnome-photos
+    gnome-books
     
     gnome-tweaks
     gnome-shell-extensions
