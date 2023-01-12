@@ -30,6 +30,11 @@ View details:[amlogic-s9xxx-armbian](https://github.com/ophub/amlogic-s9xxx-armb
 ### Modify static IP address
 
     vim /etc/network/interfaces
+    address 192.168.1.14
+    netmask 255.255.255.0
+    gateway 192.168.1.1
+            hwaddress ether 8E:66:EB:AC:3D:EE
+    
 ### Close rpc port
 
     sudo apt purge --remove rpcbind
