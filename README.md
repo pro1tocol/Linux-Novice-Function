@@ -147,7 +147,6 @@ wlan driver
 
     deb http://httpredir.debian.org/debian/ buster main contrib non-free
 
-
 [Debian 10-Details](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Debian%2010)
 
 [back ↑ TOP](#linux-novice-function-135)
@@ -191,5 +190,30 @@ Update package cache
     pacman -Syy && pacman -Syu
     
 [Archlinux-Details](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Archlinux)
+
+[back ↑ TOP](#linux-novice-function-135)
+
+## `Armbian`
+source storage directory file
+
+    /etc/apt/sources.list
+add and update China Tsinghua sources in the file
+
+    deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
+    # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
+    
+    deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free
+    # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free
+    
+    deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free
+    # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free
+    
+    deb https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free
+    # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free
+wlan driver
+
+    deb http://httpredir.debian.org/debian/ buster main contrib non-free
+
+[Armbian-Details]()
 
 [back ↑ TOP](#linux-novice-function-135)
