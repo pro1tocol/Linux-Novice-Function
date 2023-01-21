@@ -278,29 +278,7 @@ Environment settings
     systemctl enable gdm
 
     reboot
-Themes
 
-[Orchis](https://github.com/vinceliuice/Orchis-theme) | [Yaru-Colors](https://github.com/Jannomag/Yaru-Colors) | [Sweet](https://github.com/EliverLara/Sweet) | [Gdm-tools](https://github.com/realmazharhussain/gdm-tools) | [Ccat](https://github.com/owenthereal/ccat)
 ----------------------------------------------
-## Optional tools
-
-    epiphany-browser
-    gnome-user-docs
-    yelp
-    totem
-    gnome-maps
-    gnome-music
-    gnome-text-editor
-    gnome-weather
-    gnome-contacts
-    gnome-photos
-    gnome-books
-    
-    gnome-tweaks
-    gnome-shell-extensions
-    gnome-shell-extension-dash-to-dock
-    juno-theme-git
-    
-    guake
     
 [back to Archlinux](#this-article-mainly-explains-the-system-installation-and-deployment)
