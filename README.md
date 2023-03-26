@@ -91,18 +91,19 @@ changing the mainland China update source also requires changes:
 source storage directory file
 
     /etc/apt/sources.list
-add and update China Aliyun sources in the file
+add and update China USTC sources in the file
 
-    deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
-    deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
-    deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse
-    deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse
-    deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse
-    deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse
-    deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse
-    deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse
-    deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
-    deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
+    deb https://mirrors.ustc.edu.cn/ubuntu/ jammy main restricted universe multiverse
+    # deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy main restricted universe multiverse
+
+    deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+    # deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+
+    deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+    # deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+
+    deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+    # deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
 
 [Ubuntu-Details](https://github.com/pro1tocol/Linux-Novice-Function/tree/main/Ubuntu)
 
