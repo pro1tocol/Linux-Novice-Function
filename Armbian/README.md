@@ -32,3 +32,12 @@ View details:[amlogic-s9xxx-armbian](https://github.com/ophub/amlogic-s9xxx-armb
 ### Close rpc port
 
     sudo apt purge --remove rpcbind
+### Fix ERROR
+
+error "/etc/sudo.conf is owned by uid xxxx"
+
+    pkexec chown root:root /etc/sudo.conf -R
+error "/usr/bin/mandb"
+
+    mandb -csp
+
