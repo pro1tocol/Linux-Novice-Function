@@ -169,7 +169,7 @@ Update package cache
 [back ↑ TOP](#linux-novice-function-135)
 
 ## `Archlinux`
-Replacement China Tsinghua sources
+Replacement China USTC sources
 
 Source storage directory file
 
