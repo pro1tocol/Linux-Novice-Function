@@ -176,16 +176,16 @@ Source storage directory file
     /etc/pacman.d/mirrorlist
   x86_64
 
-    Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
+    Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
   arm64
 
-    Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxarm/$arch/$repo
+    Server = https://mirrors.ustc.edu.cn/archlinuxarm/$arch/$repo
 Third party source and storage directory file
 
     /etc/pacman.conf
     
     [archlinuxcn]
-    Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
+    Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 Update package cache
 
     pacman -Syy && pacman -Syu
